@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="MemberStatusSummary_Dataset" targetNamespace="http://tempuri.org/MemberStatusSummary_Dataset.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/MemberStatusSummary_Dataset.xsd"
+	xmlns:mstns="http://tempuri.org/MemberStatusSummary_Dataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="MemberStatusSummary_Dataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="MM_MEMBERSTRENGTH">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MEMBERTYPECODE" type="xs:string" minOccurs="0" />
+							<xs:element name="TYPEDESC" type="xs:string" />
+							<xs:element name="VALUE" type="xs:int" minOccurs="0" />
+							<xs:element name="Mdescription" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VW_MEMBERSTATUS_SUMMARY1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MEMBERTYPECODE" type="xs:string" minOccurs="0" />
+							<xs:element name="TYPEDESC" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="VALUE" type="xs:int" minOccurs="0" />
+							<xs:element name="CURENTSTATUS" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VIEW_CORPORATE">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DOJ" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ENDINGDATE" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="MCODE" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="MNAME" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="CURENTSTATUS" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="CORPORATECODE" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="CMCORPORATENAME" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="REPLACEMENT" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="RNO" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

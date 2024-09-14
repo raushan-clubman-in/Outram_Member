@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="MemberDOB_Dataset" targetNamespace="http://tempuri.org/MemberDOB_Dataset.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/MemberDOB_Dataset.xsd"
+	xmlns:mstns="http://tempuri.org/MemberDOB_Dataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="MemberDOB_Dataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="VW_MEMBERDOB">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MCODE" type="xs:string" minOccurs="0" />
+							<xs:element name="MNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="DOB" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="SPOUSE" type="xs:string" minOccurs="0" />
+							<xs:element name="PPHONE1" type="xs:string" minOccurs="0" />
+							<xs:element name="WifeDOB" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CURENTSTATUS" type="xs:string" minOccurs="0" />
+							<xs:element name="WEDDING_DATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TYPEDESC" type="xs:string" />
+							<xs:element name="Child_nm" type="xs:string" minOccurs="0" />
+							<xs:element name="child_dob" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="MM_View_Agelimit">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="mcode" type="xs:string" minOccurs="0" />
+							<xs:element name="mname" type="xs:string" minOccurs="0" />
+							<xs:element name="curentstatus" type="xs:string" minOccurs="0" />
+							<xs:element name="AGE" type="xs:int" minOccurs="0" />
+							<xs:element name="dob" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="membertype" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTCELL" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTEMAIL" type="xs:string" minOccurs="0" />
+							<xs:element name="bg" type="xs:string" minOccurs="0" />
+							<xs:element name="btgroup" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

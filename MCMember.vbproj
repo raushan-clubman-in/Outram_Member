@@ -1,0 +1,4204 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{19867717-B487-4BD9-ADCB-64B714CE9466}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "GETQUOTE.ICO"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "Member"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "Member"
+                StartupObject = "Member.newwelcome"
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "C:\Windows\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "C:\Windows\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "C:\Windows\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "C:\Windows\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "C:\Windows\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "CrystalDecisions.CrystalReports.Engine"
+                    AssemblyName = "CrystalDecisions.CrystalReports.Engine"
+                    HintPath = "C:\Program Files (x86)\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.CrystalReports.Engine.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.ReportSource"
+                    AssemblyName = "CrystalDecisions.ReportSource"
+                    HintPath = "C:\Program Files (x86)\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.ReportSource.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Shared"
+                    AssemblyName = "CrystalDecisions.Shared"
+                    HintPath = "C:\Program Files (x86)\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Shared.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "MSDATASRC"
+                    AssemblyName = "MSDATASRC"
+                    HintPath = "..\..\CLUBMEMBER30042013\CATHOLIC\CLUBMEMBER30042013\bin\MSDATASRC.dll"
+                />
+                <Reference
+                    Name = "AxInterop.MSFlexGridLib"
+                    AssemblyName = "AxInterop.MSFlexGridLib"
+                    HintPath = "..\..\CLUBMEMBER30042013\CATHOLIC\CLUBMEMBER30042013\bin\AxInterop.MSFlexGridLib.dll"
+                />
+                <Reference
+                    Name = "adodb"
+                    AssemblyName = "ADODB"
+                    HintPath = "C:\Program Files (x86)\Microsoft.NET\Primary Interop Assemblies\adodb.dll"
+                    AssemblyFolderKey = "hklm\primary interop assemblies"
+                />
+                <Reference
+                    Name = "System.Management"
+                    AssemblyName = "System.Management"
+                    HintPath = "C:\Windows\Microsoft.NET\Framework\v1.1.4322\System.Management.dll"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Windows.Forms"
+                    AssemblyName = "CrystalDecisions.Windows.Forms"
+                    HintPath = "C:\Program Files (x86)\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Windows.Forms.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "itextsharp"
+                    AssemblyName = "itextsharp"
+                    HintPath = "bin\itextsharp.dll"
+                />
+                <Reference
+                    Name = "Interop.FPUSpreadADO"
+                    AssemblyName = "Interop.FPUSpreadADO"
+                    HintPath = "..\..\..\..\Saturday\MEMBER\bin\Interop.FPUSpreadADO.dll"
+                />
+                <Reference
+                    Name = "AxInterop.FPSpreadADO"
+                    AssemblyName = "AxInterop.FPSpreadADO"
+                    HintPath = "..\..\..\..\Saturday\MEMBER\bin\AxInterop.FPSpreadADO.dll"
+                />
+                <Reference
+                    Name = "AxInterop.FPUSpreadADO"
+                    AssemblyName = "AxInterop.FPUSpreadADO"
+                    HintPath = "..\..\..\..\Saturday\MEMBER\bin\AxInterop.FPUSpreadADO.dll"
+                />
+                <Reference
+                    Name = "Interop.FPSpreadADO"
+                    AssemblyName = "Interop.FPSpreadADO"
+                    HintPath = "..\..\..\..\Saturday\MEMBER\bin\Interop.FPSpreadADO.dll"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Diagnostics" />
+                <Import Namespace = "System.Windows.Forms" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CLUBMAN.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Form2.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Form2.resx"
+                    DependentUpon = "Form2.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmSearch.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmSearch.resx"
+                    DependentUpon = "frmSearch.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "GETQUOTE.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "GlobalClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "globalFunction.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "GlobalVariables.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CrystalReports\Add_List.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Add_List.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Add_List.vb"
+                    DependentUpon = "Add_List.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\AddressListBA_Dataset.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "AddressListBA_Dataset.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\AddressListBA_Dataset.vb"
+                    DependentUpon = "AddressListBA_Dataset.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\AddressListBA_Dataset.xsx"
+                    DependentUpon = "AddressListBA_Dataset.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\AddressListCA_Dataset.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "AddressListCA_Dataset.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\AddressListCA_Dataset.vb"
+                    DependentUpon = "AddressListCA_Dataset.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\AddressListCA_Dataset.xsx"
+                    DependentUpon = "AddressListCA_Dataset.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\AddressListCONT_Dataset.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "AddressListCONT_Dataset.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\AddressListCONT_Dataset.vb"
+                    DependentUpon = "AddressListCONT_Dataset.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\AddressListCONT_Dataset.xsx"
+                    DependentUpon = "AddressListCONT_Dataset.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\AddressListPA_Dataset.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "AddressListPA_Dataset.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\AddressListPA_Dataset.vb"
+                    DependentUpon = "AddressListPA_Dataset.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\AddressListPA_Dataset.xsx"
+                    DependentUpon = "AddressListPA_Dataset.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\AFFCLUBLIST.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "AFFCLUBLIST.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\AFFCLUBLIST.vb"
+                    DependentUpon = "AFFCLUBLIST.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Affiliatedclub_Dataset.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "Affiliatedclub_Dataset.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Affiliatedclub_Dataset.vb"
+                    DependentUpon = "Affiliatedclub_Dataset.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Affiliatedclub_Dataset.xsx"
+                    DependentUpon = "Affiliatedclub_Dataset.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\ALUBILL.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "ALUBILL.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\ALUBILL.vb"
+                    DependentUpon = "ALUBILL.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\ALUBILLDETAILS.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "ALUBILLDETAILS.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\ALUBILLDETAILS.vb"
+                    DependentUpon = "ALUBILLDETAILS.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\BILLDET_CRY.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "BILLDET_CRY.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\BILLDET_CRY.vb"
+                    DependentUpon = "BILLDET_CRY.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\CRRY_FACILITY_DET.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CRRY_FACILITY_DET.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\CRRY_FACILITY_DET.vb"
+                    DependentUpon = "CRRY_FACILITY_DET.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Address.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Address.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Address.vb"
+                    DependentUpon = "Cry_Address.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_ADDRESSCONT.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CRY_ADDRESSCONT.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_ADDRESSCONT.vb"
+                    DependentUpon = "CRY_ADDRESSCONT.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_ADDRESSCONT1.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CRY_ADDRESSCONT1.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_ADDRESSCONT1.vb"
+                    DependentUpon = "CRY_ADDRESSCONT1.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_AddressList_BA.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_AddressList_BA.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_AddressList_BA.vb"
+                    DependentUpon = "Cry_AddressList_BA.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_AddressList_CA.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_AddressList_CA.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_AddressList_CA.vb"
+                    DependentUpon = "Cry_AddressList_CA.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_AddressList_CONT.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_AddressList_CONT.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_AddressList_CONT.vb"
+                    DependentUpon = "Cry_AddressList_CONT.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_AddressList_PA.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_AddressList_PA.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_AddressList_PA.vb"
+                    DependentUpon = "Cry_AddressList_PA.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_ALI_DETAILS.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_ALI_DETAILS.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_ALI_DETAILS.vb"
+                    DependentUpon = "Cry_ALI_DETAILS.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Appno_Memberlist.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Appno_Memberlist.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Appno_Memberlist.vb"
+                    DependentUpon = "Cry_Appno_Memberlist.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_ArmServicesList.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_ArmServicesList.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_ArmServicesList.vb"
+                    DependentUpon = "Cry_ArmServicesList.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_billdetails.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_billdetails.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_billdetails.vb"
+                    DependentUpon = "Cry_billdetails.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_billdetails_gnc.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_billdetails_gnc.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_billdetails_gnc.vb"
+                    DependentUpon = "Cry_billdetails_gnc.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_billdetails_new.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_billdetails_new.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_billdetails_new.vb"
+                    DependentUpon = "Cry_billdetails_new.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_billsummary.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_billsummary.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_billsummary.vb"
+                    DependentUpon = "Cry_billsummary.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_BIRTHDAY.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CRY_BIRTHDAY.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_BIRTHDAY.vb"
+                    DependentUpon = "CRY_BIRTHDAY.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_bloodgroup_det.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_bloodgroup_det.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_bloodgroup_det.vb"
+                    DependentUpon = "Cry_bloodgroup_det.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_categoryconversion.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_categoryconversion.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_categoryconversion.vb"
+                    DependentUpon = "Cry_categoryconversion.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_categorymaster.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_categorymaster.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_categorymaster.vb"
+                    DependentUpon = "Cry_categorymaster.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Clubdet.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Clubdet.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Clubdet.vb"
+                    DependentUpon = "Cry_Clubdet.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_contact_strikers.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_contact_strikers.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_contact_strikers.vb"
+                    DependentUpon = "Cry_contact_strikers.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_contact_strikers1.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_contact_strikers1.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_contact_strikers1.vb"
+                    DependentUpon = "Cry_contact_strikers1.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_contactlist.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_contactlist.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_contactlist.vb"
+                    DependentUpon = "Cry_contactlist.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_contactlist1.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_contactlist1.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_contactlist1.vb"
+                    DependentUpon = "Cry_contactlist1.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_corporate.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_corporate.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_corporate.vb"
+                    DependentUpon = "Cry_corporate.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_CorpStatusSummary.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_CorpStatusSummary.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_CorpStatusSummary.vb"
+                    DependentUpon = "Cry_CorpStatusSummary.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_creditstop.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_creditstop.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_creditstop.vb"
+                    DependentUpon = "Cry_creditstop.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Debitcredit.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Debitcredit.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Debitcredit.vb"
+                    DependentUpon = "Cry_Debitcredit.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Debitcredit_MEM.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Debitcredit_MEM.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Debitcredit_MEM.vb"
+                    DependentUpon = "Cry_Debitcredit_MEM.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Defaulter.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Defaulter.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Defaulter.vb"
+                    DependentUpon = "Cry_Defaulter.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Dependency_Above.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Dependency_Above.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Dependency_Above.vb"
+                    DependentUpon = "Cry_Dependency_Above.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Dependency_below.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Dependency_below.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Dependency_below.vb"
+                    DependentUpon = "Cry_Dependency_below.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_DependencyDetails.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_DependencyDetails.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_DependencyDetails.vb"
+                    DependentUpon = "Cry_DependencyDetails.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_dependent_address.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_dependent_address.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_dependent_address.vb"
+                    DependentUpon = "Cry_dependent_address.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Dependent_Age_Wise.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Dependent_Age_Wise.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Dependent_Age_Wise.vb"
+                    DependentUpon = "Cry_Dependent_Age_Wise.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_DependentList.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_DependentList.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_DependentList.vb"
+                    DependentUpon = "Cry_DependentList.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Designation.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Designation.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Designation.vb"
+                    DependentUpon = "Cry_Designation.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_DojwiseList.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_DojwiseList.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_DojwiseList.vb"
+                    DependentUpon = "Cry_DojwiseList.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_EnterFee_Summary.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_EnterFee_Summary.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_EnterFee_Summary.vb"
+                    DependentUpon = "Cry_EnterFee_Summary.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Enterfeesdet.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Enterfeesdet.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Enterfeesdet.vb"
+                    DependentUpon = "Cry_Enterfeesdet.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Facilit_mem_List.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Facilit_mem_List.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Facilit_mem_List.vb"
+                    DependentUpon = "Cry_Facilit_mem_List.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Facilit_mem_List1.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Facilit_mem_List11.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Facilit_mem_List11.vb"
+                    DependentUpon = "Cry_Facilit_mem_List1.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Facility_Det.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Facility_Det.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Facility_Det.vb"
+                    DependentUpon = "Cry_Facility_Det.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_facility_List.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_facility_List.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_facility_List.vb"
+                    DependentUpon = "Cry_facility_List.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Gender_detials.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Gender_detials.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Gender_detials.vb"
+                    DependentUpon = "Cry_Gender_detials.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Golf_Monthbill.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Golf_Monthbill.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Golf_Monthbill.vb"
+                    DependentUpon = "Cry_Golf_Monthbill.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_GOLFMONTHBILLSUMMARY.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CRY_GOLFMONTHBILLSUMMARY.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_GOLFMONTHBILLSUMMARY.vb"
+                    DependentUpon = "CRY_GOLFMONTHBILLSUMMARY.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_IIT_MONTHBILL_SUMMARY.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CRY_IIT_MONTHBILL_SUMMARY.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_IIT_MONTHBILL_SUMMARY.vb"
+                    DependentUpon = "CRY_IIT_MONTHBILL_SUMMARY.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_ledger.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_ledger.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_ledger.vb"
+                    DependentUpon = "Cry_ledger.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\cry_Mem_conversion.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "cry_Mem_conversion.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\cry_Mem_conversion.vb"
+                    DependentUpon = "cry_Mem_conversion.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Mem_Status.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Mem_Status.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Mem_Status.vb"
+                    DependentUpon = "Cry_Mem_Status.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MEMBER_AGE_DOB.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_MEMBER_AGE_DOB.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MEMBER_AGE_DOB.vb"
+                    DependentUpon = "Cry_MEMBER_AGE_DOB.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Member_List_Photo.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Member_List_Photo.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Member_List_Photo.vb"
+                    DependentUpon = "Cry_Member_List_Photo.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MEMBER_PORPOSER_SECONDER.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_MEMBER_PORPOSER_SECONDER.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MEMBER_PORPOSER_SECONDER.vb"
+                    DependentUpon = "Cry_MEMBER_PORPOSER_SECONDER.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_MEMBER_STATUS.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CRY_MEMBER_STATUS.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_MEMBER_STATUS.vb"
+                    DependentUpon = "CRY_MEMBER_STATUS.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Member_Status_Det.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Member_Status_Det.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Member_Status_Det.vb"
+                    DependentUpon = "Cry_Member_Status_Det.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_member_type.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_member_type.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_member_type.vb"
+                    DependentUpon = "Cry_member_type.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MEMBERDIRECTORY.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_MEMBERDIRECTORY.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MEMBERDIRECTORY.vb"
+                    DependentUpon = "Cry_MEMBERDIRECTORY.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MEMBERDOB.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_MEMBERDOB.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MEMBERDOB.vb"
+                    DependentUpon = "Cry_MEMBERDOB.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MEMBERDOB2.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_MEMBERDOB2.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MEMBERDOB2.vb"
+                    DependentUpon = "Cry_MEMBERDOB2.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_memberhistoryreport.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_memberhistoryreport.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_memberhistoryreport.vb"
+                    DependentUpon = "Cry_memberhistoryreport.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Memberledger.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Memberledger.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Memberledger.vb"
+                    DependentUpon = "Cry_Memberledger.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Memberledger1.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Memberledger1.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Memberledger1.vb"
+                    DependentUpon = "Cry_Memberledger1.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MemberMaster.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_MemberMaster.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MemberMaster.vb"
+                    DependentUpon = "Cry_MemberMaster.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MemberMaster_cpc.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_MemberMaster_cpc.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MemberMaster_cpc.vb"
+                    DependentUpon = "Cry_MemberMaster_cpc.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MemberMaster_cpc1.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_MemberMaster_cpc1.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MemberMaster_cpc1.vb"
+                    DependentUpon = "Cry_MemberMaster_cpc1.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MemberStatusHistory.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_MemberStatusHistory.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MemberStatusHistory.vb"
+                    DependentUpon = "Cry_MemberStatusHistory.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MemberStatusSummary.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_MemberStatusSummary.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MemberStatusSummary.vb"
+                    DependentUpon = "Cry_MemberStatusSummary.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_memberstrength.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_memberstrength.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_memberstrength.vb"
+                    DependentUpon = "Cry_memberstrength.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Minimum_Usage_AppMember.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Minimum_Usage_AppMember.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Minimum_Usage_AppMember.vb"
+                    DependentUpon = "Cry_Minimum_Usage_AppMember.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Month_bill_Ali_Summary.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Month_bill_Ali_Summary.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Month_bill_Ali_Summary.vb"
+                    DependentUpon = "Cry_Month_bill_Ali_Summary.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Monthbill_Summary_Details.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Monthbill_Summary_Details.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Monthbill_Summary_Details.vb"
+                    DependentUpon = "Cry_Monthbill_Summary_Details.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Monthbill_Summary_Details1.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Monthbill_Summary_Details1.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Monthbill_Summary_Details1.vb"
+                    DependentUpon = "Cry_Monthbill_Summary_Details1.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_MONTHBILLANDSUMMARY.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CRY_MONTHBILLANDSUMMARY.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_MONTHBILLANDSUMMARY.vb"
+                    DependentUpon = "CRY_MONTHBILLANDSUMMARY.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MonthBilling.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_MonthBilling.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_MonthBilling.vb"
+                    DependentUpon = "Cry_MonthBilling.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_MONTHBILLSUMMARY.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CRY_MONTHBILLSUMMARY.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_MONTHBILLSUMMARY.vb"
+                    DependentUpon = "CRY_MONTHBILLSUMMARY.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_PORPOSER_LIST.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CRY_PORPOSER_LIST.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_PORPOSER_LIST.vb"
+                    DependentUpon = "CRY_PORPOSER_LIST.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Professional_det.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Professional_det.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Professional_det.vb"
+                    DependentUpon = "Cry_Professional_det.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Proposser.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Proposser.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Proposser.vb"
+                    DependentUpon = "Cry_Proposser.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_qualification_Det.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_qualification_Det.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_qualification_Det.vb"
+                    DependentUpon = "Cry_qualification_Det.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_rankwiselist.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_rankwiselist.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_rankwiselist.vb"
+                    DependentUpon = "Cry_rankwiselist.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_SECONDER_LIST.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CRY_SECONDER_LIST.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\CRY_SECONDER_LIST.vb"
+                    DependentUpon = "CRY_SECONDER_LIST.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Senior_Citizen.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Senior_Citizen.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Senior_Citizen.vb"
+                    DependentUpon = "Cry_Senior_Citizen.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_sports_Det.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_sports_Det.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_sports_Det.vb"
+                    DependentUpon = "Cry_sports_Det.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_StrenthDetails.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_StrenthDetails.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_StrenthDetails.vb"
+                    DependentUpon = "Cry_StrenthDetails.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Subcategorymaster.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Subcategorymaster.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Subcategorymaster.vb"
+                    DependentUpon = "Cry_Subcategorymaster.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_SubcriptionReceipts.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_SubcriptionReceipts.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_SubcriptionReceipts.vb"
+                    DependentUpon = "Cry_SubcriptionReceipts.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Subs_Details.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Subs_Details1.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Subs_Details1.vb"
+                    DependentUpon = "Cry_Subs_Details.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_SUBS_SUMMARY.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_SUBS_SUMMARY1.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_SUBS_SUMMARY1.vb"
+                    DependentUpon = "Cry_SUBS_SUMMARY.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Subscription_Det.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Subscription_Det.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Subscription_Det.vb"
+                    DependentUpon = "Cry_Subscription_Det.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Subscription_Det2.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Subscription_Det2.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Subscription_Det2.vb"
+                    DependentUpon = "Cry_Subscription_Det2.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Subscription_Summary.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_Subscription_Summary.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_Subscription_Summary.vb"
+                    DependentUpon = "Cry_Subscription_Summary.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_SubscriptionDetails.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_SubscriptionDetails.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_SubscriptionDetails.vb"
+                    DependentUpon = "Cry_SubscriptionDetails.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_subscriptionlist.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_subscriptionlist.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_subscriptionlist.vb"
+                    DependentUpon = "Cry_subscriptionlist.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_subscriptionmast.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_subscriptionmast.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_subscriptionmast.vb"
+                    DependentUpon = "Cry_subscriptionmast.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_SUBSCRIPTIONTAGGING.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_SUBSCRIPTIONTAGGING.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_SUBSCRIPTIONTAGGING.vb"
+                    DependentUpon = "Cry_SUBSCRIPTIONTAGGING.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_UnitWiseBill.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_UnitWiseBill.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_UnitWiseBill.vb"
+                    DependentUpon = "Cry_UnitWiseBill.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_UnitWiseMember.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_UnitWiseMember.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_UnitWiseMember.vb"
+                    DependentUpon = "Cry_UnitWiseMember.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_weddingDay.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Cry_weddingDay.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Cry_weddingDay.vb"
+                    DependentUpon = "Cry_weddingDay.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\CRYALI.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CRYALI.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\CRYALI.vb"
+                    DependentUpon = "CRYALI.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\CryDependent_List.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CryDependent_List.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\CryDependent_List.vb"
+                    DependentUpon = "CryDependent_List.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Crygnc_billdetails.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Crygnc_billdetails.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Crygnc_billdetails.vb"
+                    DependentUpon = "Crygnc_billdetails.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\CrystalReport2.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CrystalReport2.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\CrystalReport2.vb"
+                    DependentUpon = "CrystalReport2.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\CrystalReport3.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CrystalReport3.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\CrystalReport3.vb"
+                    DependentUpon = "CrystalReport3.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\CrystalReport4.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CrystalReport4.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\CrystalReport4.vb"
+                    DependentUpon = "CrystalReport4.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset1.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "Dataset1.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset1.vb"
+                    DependentUpon = "Dataset1.xsd"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset1.xsx"
+                    DependentUpon = "Dataset1.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset12.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "Dataset12.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset12.vb"
+                    DependentUpon = "Dataset12.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset12.xsx"
+                    DependentUpon = "Dataset12.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset13.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "Dataset13.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset13.vb"
+                    DependentUpon = "Dataset13.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset13.xsx"
+                    DependentUpon = "Dataset13.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset14.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "Dataset14.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset14.vb"
+                    DependentUpon = "Dataset14.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset14.xsx"
+                    DependentUpon = "Dataset14.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset15.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "Dataset15.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset15.vb"
+                    DependentUpon = "Dataset15.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset15.xsx"
+                    DependentUpon = "Dataset15.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset2.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset2.xsx"
+                    DependentUpon = "Dataset2.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset3.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset3.xsx"
+                    DependentUpon = "Dataset3.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset4.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset4.xsx"
+                    DependentUpon = "Dataset4.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset5.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset5.xsx"
+                    DependentUpon = "Dataset5.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset6.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "Dataset6.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset6.vb"
+                    DependentUpon = "Dataset6.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset6.xsx"
+                    DependentUpon = "Dataset6.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset7.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "Dataset7.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset7.vb"
+                    DependentUpon = "Dataset7.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset7.xsx"
+                    DependentUpon = "Dataset7.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset8.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "Dataset8.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset8.vb"
+                    DependentUpon = "Dataset8.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset8.xsx"
+                    DependentUpon = "Dataset8.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\DatasetMonthbillng.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DatasetMonthbillng.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\DatasetMonthbillng.vb"
+                    DependentUpon = "DatasetMonthbillng.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\DatasetMonthbillng.xsx"
+                    DependentUpon = "DatasetMonthbillng.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\DatasetRANKARMWISE.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DatasetRANKARMWISE.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\DatasetRANKARMWISE.vb"
+                    DependentUpon = "DatasetRANKARMWISE.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\DatasetRANKARMWISE.xsx"
+                    DependentUpon = "DatasetRANKARMWISE.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\DEP_DET.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "DEP_DET.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\DEP_DET.vb"
+                    DependentUpon = "DEP_DET.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\DependencyDetails_Dataset.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DependencyDetails_Dataset.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\DependencyDetails_Dataset.vb"
+                    DependentUpon = "DependencyDetails_Dataset.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\DependencyDetails_Dataset.xsx"
+                    DependentUpon = "DependencyDetails_Dataset.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\GNCBILLDTL.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "GNCBILLDTL.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\GNCBILLDTL.vb"
+                    DependentUpon = "GNCBILLDTL.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\gncdtl.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "gncdtl.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\gncdtl.vb"
+                    DependentUpon = "gncdtl.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\gncmonthbill1.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "gncmonthbill1.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\gncmonthbill1.vb"
+                    DependentUpon = "gncmonthbill1.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\IITMONTHBILL.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "IITMONTHBILL.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\IITMONTHBILL.vb"
+                    DependentUpon = "IITMONTHBILL.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MEM_DET.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "MEM_DET.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MEM_DET.vb"
+                    DependentUpon = "MEM_DET.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MEM_DOB_LIST.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "MEM_DOB_LIST1.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MEM_DOB_LIST1.vb"
+                    DependentUpon = "MEM_DOB_LIST.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MEM_FULL_ADDR.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "MEM_FULL_ADDR.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MEM_FULL_ADDR.vb"
+                    DependentUpon = "MEM_FULL_ADDR.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MEM_LIST.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "MEM_LIST.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MEM_LIST.vb"
+                    DependentUpon = "MEM_LIST.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MEM_PH_LIST.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "MEM_PH_LIST.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MEM_PH_LIST.vb"
+                    DependentUpon = "MEM_PH_LIST.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MemberDirectory_Dataset.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "MemberDirectory_Dataset.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MemberDirectory_Dataset.vb"
+                    DependentUpon = "MemberDirectory_Dataset.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MemberDirectory_Dataset.xsx"
+                    DependentUpon = "MemberDirectory_Dataset.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\MemberDOB_Dataset.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "MemberDOB_Dataset.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MemberDOB_Dataset.vb"
+                    DependentUpon = "MemberDOB_Dataset.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MemberDOB_Dataset.xsx"
+                    DependentUpon = "MemberDOB_Dataset.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\MemberMaster_Dataset.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "MemberMaster_Dataset.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MemberMaster_Dataset.vb"
+                    DependentUpon = "MemberMaster_Dataset.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MemberMaster_Dataset.xsx"
+                    DependentUpon = "MemberMaster_Dataset.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\MemberMaster_Report.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "MemberMaster_Report.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MemberMaster_Report.vb"
+                    DependentUpon = "MemberMaster_Report.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MemberStatusHistory_Dataset.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "MemberStatusHistory_Dataset.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MemberStatusHistory_Dataset.vb"
+                    DependentUpon = "MemberStatusHistory_Dataset.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MemberStatusHistory_Dataset.xsx"
+                    DependentUpon = "MemberStatusHistory_Dataset.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\MemberStatusSummary_Dataset.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "MemberStatusSummary_Dataset.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MemberStatusSummary_Dataset.vb"
+                    DependentUpon = "MemberStatusSummary_Dataset.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MemberStatusSummary_Dataset.xsx"
+                    DependentUpon = "MemberStatusSummary_Dataset.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\mm.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "mm.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\mm.vb"
+                    DependentUpon = "mm.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Month_Bill_Gnc_Summary .rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Month_Bill_Gnc_Summary .vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Month_Bill_Gnc_Summary .vb"
+                    DependentUpon = "Month_Bill_Gnc_Summary .rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MONTH_BILL1.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "MONTH_BILL1.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MONTH_BILL1.vb"
+                    DependentUpon = "MONTH_BILL1.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MonthBill.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "MonthBill.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MonthBill.vb"
+                    DependentUpon = "MonthBill.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MonthBill0910.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "MonthBill09101.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MonthBill09101.vb"
+                    DependentUpon = "MonthBill0910.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MonthBill1.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "MonthBill1.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MonthBill1.vb"
+                    DependentUpon = "MonthBill1.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MONTHBILLDETAILS.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "MONTHBILLDETAILS.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MONTHBILLDETAILS.vb"
+                    DependentUpon = "MONTHBILLDETAILS.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MONTHBILLSUMMARY.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "MONTHBILLSUMMARY.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MONTHBILLSUMMARY.vb"
+                    DependentUpon = "MONTHBILLSUMMARY.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MonthlyPartyBill.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "MonthlyPartyBill.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MonthlyPartyBill.vb"
+                    DependentUpon = "MonthlyPartyBill.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MSTRENGTHLIST.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "MSTRENGTHLIST.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MSTRENGTHLIST.vb"
+                    DependentUpon = "MSTRENGTHLIST.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MStrengthList_Dataset.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "MStrengthList_Dataset.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\MStrengthList_Dataset.vb"
+                    DependentUpon = "MStrengthList_Dataset.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MStrengthList_Dataset.xsx"
+                    DependentUpon = "MStrengthList_Dataset.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\OutStandletter1.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "OutStandletter1.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\OutStandletter1.vb"
+                    DependentUpon = "OutStandletter1.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\OutStandletter2.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "OutStandletter2.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\OutStandletter2.vb"
+                    DependentUpon = "OutStandletter2.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\POSDET.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "POSDET.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\POSDET.vb"
+                    DependentUpon = "POSDET.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Posmaster.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Posmaster.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Posmaster.vb"
+                    DependentUpon = "Posmaster.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Remainder1Summary.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Remainder1Summary.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Remainder1Summary.vb"
+                    DependentUpon = "Remainder1Summary.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Remainder4.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Remainder4.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Remainder4.vb"
+                    DependentUpon = "Remainder4.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Remainderletter.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "Remainderletter.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Remainderletter.vb"
+                    DependentUpon = "Remainderletter.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Remainderletter.xsx"
+                    DependentUpon = "Remainderletter.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\Reminder1.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Reminder1.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Reminder1.vb"
+                    DependentUpon = "Reminder1.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Reminder2.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Reminder2.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Reminder2.vb"
+                    DependentUpon = "Reminder2.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Reminder3.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "Reminder3.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Reminder3.vb"
+                    DependentUpon = "Reminder3.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\ReminderHGA1.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "ReminderHGA1.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\ReminderHGA1.vb"
+                    DependentUpon = "ReminderHGA1.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\ReminderHGA2.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "ReminderHGA2.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\ReminderHGA2.vb"
+                    DependentUpon = "ReminderHGA2.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\ReminderHGA3.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "ReminderHGA3.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\ReminderHGA3.vb"
+                    DependentUpon = "ReminderHGA3.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Reports.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "CrystalReports\Reports.xsx"
+                    DependentUpon = "Reports.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\Reports1.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "Reports1.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Reports1.vb"
+                    DependentUpon = "Reports1.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Reports1.xsx"
+                    DependentUpon = "Reports1.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\RPT_Member_Details.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "RPT_Member_Details.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\RPT_Member_Details.vb"
+                    DependentUpon = "RPT_Member_Details.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\RPT_monthbilldetail.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "RPT_monthbilldetail.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\RPT_monthbilldetail.vb"
+                    DependentUpon = "RPT_monthbilldetail.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\RPt_monthbillsummary.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "RPt_monthbillsummary.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\RPt_monthbillsummary.vb"
+                    DependentUpon = "RPt_monthbillsummary.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\subscriptionsummary.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "subscriptionsummary.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\subscriptionsummary.vb"
+                    DependentUpon = "subscriptionsummary.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\subscriptionsummary.xsx"
+                    DependentUpon = "subscriptionsummary.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CrystalReports\TEST_MEM_RPT.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "TEST_MEM_RPT.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\TEST_MEM_RPT.vb"
+                    DependentUpon = "TEST_MEM_RPT.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\UnitWiseMember_Dataset.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "UnitWiseMember_Dataset.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\UnitWiseMember_Dataset.vb"
+                    DependentUpon = "UnitWiseMember_Dataset.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\UnitWiseMember_Dataset.xsx"
+                    DependentUpon = "UnitWiseMember_Dataset.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "designer\CompanyList1.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "designer\CompanyList1.resx"
+                    DependentUpon = "CompanyList1.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "designer\EXPORT.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "designer\EXPORT.resx"
+                    DependentUpon = "EXPORT.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "designer\FrontScreen.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "designer\FrontScreen.resx"
+                    DependentUpon = "FrontScreen.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "designer\Memberhelp_Member.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "designer\Memberhelp_Member.resx"
+                    DependentUpon = "Memberhelp_Member.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "designer\Memberhelp_Party.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "designer\Memberhelp_Party.resx"
+                    DependentUpon = "Memberhelp_Party.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "designer\Memberhelp_Room.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "designer\Memberhelp_Room.resx"
+                    DependentUpon = "Memberhelp_Room.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "designer\Memberhelp1.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "designer\Memberhelp1.resx"
+                    DependentUpon = "Memberhelp1.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "designer\MMHELP.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "designer\MMHELP.resx"
+                    DependentUpon = "MMHELP.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "LOGIN\frmListSearch.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LOGIN\frmListSearch.resx"
+                    DependentUpon = "frmListSearch.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "LOGIN\frmMemberMDI.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LOGIN\frmMemberMDI.resx"
+                    DependentUpon = "frmMemberMDI.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "LOGIN\LoginForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LOGIN\LoginForm.resx"
+                    DependentUpon = "LoginForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "LOGIN\newwelcome.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LOGIN\newwelcome.resx"
+                    DependentUpon = "newwelcome.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "LOGIN\Userlogin.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LOGIN\Userlogin.resx"
+                    DependentUpon = "Userlogin.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "LOGIN\Welcome.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LOGIN\Welcome.resx"
+                    DependentUpon = "Welcome.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\ACCOUNTSITEMTAGGING.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\ACCOUNTSITEMTAGGING.resx"
+                    DependentUpon = "ACCOUNTSITEMTAGGING.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\ACCOUNTSITEMTAGGING1.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\ACCOUNTSITEMTAGGING1.resx"
+                    DependentUpon = "ACCOUNTSITEMTAGGING1.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\addchg_Posting.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\addchg_Posting.resx"
+                    DependentUpon = "addchg_Posting.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\Advance_Subscription.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\Advance_Subscription.resx"
+                    DependentUpon = "Advance_Subscription.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\CashReceipt.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\CashReceipt.resx"
+                    DependentUpon = "CashReceipt.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\CorpSubscriptionPosting.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\CorpSubscriptionPosting.resx"
+                    DependentUpon = "CorpSubscriptionPosting.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\memberconversion.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\memberconversion.resx"
+                    DependentUpon = "memberconversion.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\MembersReceipts.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MembersReceipts.resx"
+                    DependentUpon = "MembersReceipts.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberTransfer.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberTransfer.resx"
+                    DependentUpon = "MemberTransfer.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\MJV_JournalRegister.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MJV_JournalRegister.resx"
+                    DependentUpon = "MJV_JournalRegister.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\monthlyprocess.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\monthlyprocess.resx"
+                    DependentUpon = "monthlyprocess.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\MUCPosting.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MUCPosting.resx"
+                    DependentUpon = "MUCPosting.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\NewStatusconversion.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\NewStatusconversion.resx"
+                    DependentUpon = "NewStatusconversion.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\PhotoIDdetails.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\PhotoIDdetails.resx"
+                    DependentUpon = "PhotoIDdetails.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\PODdetails.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\PODdetails.resx"
+                    DependentUpon = "PODdetails.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\RevokeStatus.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\RevokeStatus.resx"
+                    DependentUpon = "RevokeStatus.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\SpecialSubscriptionPosting.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\SpecialSubscriptionPosting.resx"
+                    DependentUpon = "SpecialSubscriptionPosting.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\Statusconversion1.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\Statusconversion1.resx"
+                    DependentUpon = "Statusconversion1.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\AddressListReport.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\AddressStickerReport.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\Class_CriditNo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\Class_LocarNo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\clsWmi.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\CorporateMemberListReport.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\Dependent_List.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\frmReports.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\frmReports.resx"
+                    DependentUpon = "frmReports.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\MemberStatusListReport.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\ReminderLetter.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\ReminderList.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\ReportFilter.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\ReportFilter.resx"
+                    DependentUpon = "ReportFilter.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\SerialReport.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\SpecialAbsenteeListReport.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\SubscriptionBillingReport.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\SubsRepFilter.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\SubsRepFilter.resx"
+                    DependentUpon = "SubsRepFilter.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\SummaryRep.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Member Transaction\MemberReports\SurnamewiseListReport.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\addresssticker.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\addresssticker.resx"
+                    DependentUpon = "addresssticker.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\AffiliatedClubDetails.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\AffiliatedClubDetails.resx"
+                    DependentUpon = "AffiliatedClubDetails.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\AffiliatedClubFacility.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\AffiliatedClubFacility.resx"
+                    DependentUpon = "AffiliatedClubFacility.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\CellingMaster.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\CellingMaster.resx"
+                    DependentUpon = "CellingMaster.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\CityMaster.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\CityMaster.resx"
+                    DependentUpon = "CityMaster.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\Country_Master.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\Country_Master.resx"
+                    DependentUpon = "Country_Master.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\CrystalReport1.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CrystalReport1.vb"
+                />
+                <File
+                    RelPath = "MemberModule\CrystalReport1.vb"
+                    DependentUpon = "CrystalReport1.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "MemberModule\Designation_Master.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\Designation_Master.resx"
+                    DependentUpon = "Designation_Master.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\Facility.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\Facility.resx"
+                    DependentUpon = "Facility.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\Facility_NonRSI.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\Facility_NonRSI.resx"
+                    DependentUpon = "Facility_NonRSI.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\Form1.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\Form1.resx"
+                    DependentUpon = "Form1.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\frmMemberCategory.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\frmMemberCategory.resx"
+                    DependentUpon = "frmMemberCategory.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\frmMemberCorporate.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\frmMemberCorporate.resx"
+                    DependentUpon = "frmMemberCorporate.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\frmMemberSubscription.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\frmMemberSubscription.resx"
+                    DependentUpon = "frmMemberSubscription.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\frmSmartCard.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\frmSmartCard.resx"
+                    DependentUpon = "frmSmartCard.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\ListOperation.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\ListOperation.resx"
+                    DependentUpon = "ListOperation.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\MaritalStatus_Master.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\MaritalStatus_Master.resx"
+                    DependentUpon = "MaritalStatus_Master.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\mem.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\mem.resx"
+                    DependentUpon = "mem.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\MemberHistory.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\MemberHistory.resx"
+                    DependentUpon = "MemberHistory.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\MemberMaster.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\MemberMaster.resx"
+                    DependentUpon = "MemberMaster.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\MembershipMaster.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\MembershipMaster.resx"
+                    DependentUpon = "MembershipMaster.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\PICTUREMANIPULATION.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\PICTUREMANIPULATION.resx"
+                    DependentUpon = "PICTUREMANIPULATION.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\POSFUNDMASTER.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\POSFUNDMASTER.resx"
+                    DependentUpon = "POSFUNDMASTER.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\ProfessionalMaster.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\ProfessionalMaster.resx"
+                    DependentUpon = "ProfessionalMaster.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\ReasonMaster.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\ReasonMaster.resx"
+                    DependentUpon = "ReasonMaster.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\Religion_Master.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\Religion_Master.resx"
+                    DependentUpon = "Religion_Master.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\rem1.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\rem1.resx"
+                    DependentUpon = "rem1.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\ReportDesigner.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\ReportDesigner.resx"
+                    DependentUpon = "ReportDesigner.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\State_Master.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\State_Master.resx"
+                    DependentUpon = "State_Master.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\Statusconversion.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\Statusconversion.resx"
+                    DependentUpon = "Statusconversion.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\StatusMaster.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\StatusMaster.resx"
+                    DependentUpon = "StatusMaster.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\SubCategorymaster.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\SubCategorymaster.resx"
+                    DependentUpon = "SubCategorymaster.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\SubscriptionPosting.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\SubscriptionPosting.resx"
+                    DependentUpon = "SubscriptionPosting.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\SubscriptionTagging.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\SubscriptionTagging.af.resx"
+                    DependentUpon = "SubscriptionTagging.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\SubscriptionTagging.resx"
+                    DependentUpon = "SubscriptionTagging.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\SubscriptionType_Master.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\SubscriptionType_Master.resx"
+                    DependentUpon = "SubscriptionType_Master.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\Title_Master.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\Title_Master.resx"
+                    DependentUpon = "Title_Master.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\UnitMaster.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\UnitMaster.resx"
+                    DependentUpon = "UnitMaster.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MemberModule\Version_Master.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberModule\Version_Master.resx"
+                    DependentUpon = "Version_Master.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\Absenteereport.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\Absenteereport.resx"
+                    DependentUpon = "Absenteereport.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\addresslist.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\addresslist.resx"
+                    DependentUpon = "addresslist.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\addresslist1.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\addresslist1.resx"
+                    DependentUpon = "addresslist1.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\addresslist2.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\addresslist2.resx"
+                    DependentUpon = "addresslist2.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\addresslist3.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\addresslist3.resx"
+                    DependentUpon = "addresslist3.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\AffiliatedClubList.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\AffiliatedClubList.resx"
+                    DependentUpon = "AffiliatedClubList.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\ArmServicesList.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\ArmServicesList.resx"
+                    DependentUpon = "ArmServicesList.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\CategoryStatusList.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\CategoryStatusList.resx"
+                    DependentUpon = "CategoryStatusList.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\corporateReport.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\corporateReport.resx"
+                    DependentUpon = "corporateReport.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\CorpReportScreen.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\CorpReportScreen.resx"
+                    DependentUpon = "CorpReportScreen.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\Corpstatus.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\Corpstatus.resx"
+                    DependentUpon = "Corpstatus.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\creditreport.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\creditreport.resx"
+                    DependentUpon = "creditreport.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\CSC_SubsBill.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\CSC_SubsBill.resx"
+                    DependentUpon = "CSC_SubsBill.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\dependentlistregister.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\dependentlistregister.resx"
+                    DependentUpon = "dependentlistregister.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\doblist.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\doblist.resx"
+                    DependentUpon = "doblist.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\Facility Report.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\Facility Report.resx"
+                    DependentUpon = "Facility Report.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\FRMOUTSTANDINGRPT.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\FRMOUTSTANDINGRPT.resX"
+                    DependentUpon = "FRMOUTSTANDINGRPT.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\FRMOUTSTANDINGRPT_PARTY.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\FRMOUTSTANDINGRPT_PARTY.resX"
+                    DependentUpon = "FRMOUTSTANDINGRPT_PARTY.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\FRMOUTSTANDINGRPT_RENT.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\FRMOUTSTANDINGRPT_RENT.resX"
+                    DependentUpon = "FRMOUTSTANDINGRPT_RENT.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\ID_Card_Print.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\ID_Card_Print.resx"
+                    DependentUpon = "ID_Card_Print.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\lockerreport.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\lockerreport.resx"
+                    DependentUpon = "lockerreport.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\MBILL.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\MBILL.resx"
+                    DependentUpon = "MBILL.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\MBILL_HBC.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\MBILL_HBC.resx"
+                    DependentUpon = "MBILL_HBC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\MEM_SPO_DEP_BIRTH.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\MEM_SPO_DEP_BIRTH.resx"
+                    DependentUpon = "MEM_SPO_DEP_BIRTH.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\Member_details.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\Member_details.resx"
+                    DependentUpon = "Member_details.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\MemberDirectory.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\MemberDirectory.resx"
+                    DependentUpon = "MemberDirectory.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\MembersDetails.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\MembersDetails.resx"
+                    DependentUpon = "MembersDetails.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\MembersList.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\MembersList.resx"
+                    DependentUpon = "MembersList.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\Memberstatus.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\Memberstatus.resx"
+                    DependentUpon = "Memberstatus.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\MemberwiseSubscriptionDetails.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\MemberwiseSubscriptionDetails.resx"
+                    DependentUpon = "MemberwiseSubscriptionDetails.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\MemDepSearch .vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\MemDepSearch .resx"
+                    DependentUpon = "MemDepSearch .vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\MEMEBRVIEW.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\MEMEBRVIEW.resx"
+                    DependentUpon = "MEMEBRVIEW.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\MEMREP_MUC_DET.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\MEMREP_MUC_DET.resx"
+                    DependentUpon = "MEMREP_MUC_DET.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\MEMREP_SUBSCRIPTION_DET.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\MEMREP_SUBSCRIPTION_DET.resx"
+                    DependentUpon = "MEMREP_SUBSCRIPTION_DET.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\Month_Bill.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\Month_Bill.resx"
+                    DependentUpon = "Month_Bill.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\Month_Bill_Party.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\Month_Bill_Party.resx"
+                    DependentUpon = "Month_Bill_Party.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\MonthBilling.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\MonthBilling.resx"
+                    DependentUpon = "MonthBilling.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\MonthBilling1.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\MonthBilling1.resx"
+                    DependentUpon = "MonthBilling1.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\Monthendbill.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\Monthendbill.resx"
+                    DependentUpon = "Monthendbill.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\OUTSTAND_MEMREP_LIST.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\OUTSTAND_MEMREP_LIST.resx"
+                    DependentUpon = "OUTSTAND_MEMREP_LIST.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\Outstandinglist.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\Outstandinglist.resx"
+                    DependentUpon = "Outstandinglist.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\PartyBill.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\PartyBill.resx"
+                    DependentUpon = "PartyBill.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\RANKWISELIST.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\RANKWISELIST.resx"
+                    DependentUpon = "RANKWISELIST.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\Remaindereportlist.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\Remaindereportlist.resx"
+                    DependentUpon = "Remaindereportlist.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\Remindeletterr.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\Remindeletterr.resx"
+                    DependentUpon = "Remindeletterr.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\reminder.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\reminder.resx"
+                    DependentUpon = "reminder.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\REMINDERNEW.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\REMINDERNEW.resx"
+                    DependentUpon = "REMINDERNEW.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\ReportDesignerCategory.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\ReportDesignerCategory.resx"
+                    DependentUpon = "ReportDesignerCategory.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\ReportViwer.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\ReportViwer.resx"
+                    DependentUpon = "ReportViwer.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\Specialabsentee.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\Specialabsentee.resx"
+                    DependentUpon = "Specialabsentee.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\Stickerlist.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\Stickerlist.resx"
+                    DependentUpon = "Stickerlist.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\SubscriptionListDetails.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\SubscriptionListDetails.resx"
+                    DependentUpon = "SubscriptionListDetails.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\subscriptionsummry.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\subscriptionsummry.resx"
+                    DependentUpon = "subscriptionsummry.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\surnamereport.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\surnamereport.resx"
+                    DependentUpon = "surnamereport.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\UnitWiseMEMAddress.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\UnitWiseMEMAddress.resx"
+                    DependentUpon = "UnitWiseMEMAddress.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\UnitWiseMember.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\UnitWiseMember.resx"
+                    DependentUpon = "UnitWiseMember.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\UnitWiseOutstanding.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\UnitWiseOutstanding.resx"
+                    DependentUpon = "UnitWiseOutstanding.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+        <StartupServices>
+            <Service ID = "{CF845C55-C321-4742-B673-E6212D061ED9}" />
+        </StartupServices>
+    </VisualBasic>
+</VisualStudioProject>
+

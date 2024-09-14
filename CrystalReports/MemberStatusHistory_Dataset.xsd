@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="MemberStatusHistory_Dataset" targetNamespace="http://tempuri.org/MemberStatusHistory_Dataset.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/MemberStatusHistory_Dataset.xsd"
+	xmlns:mstns="http://tempuri.org/MemberStatusHistory_Dataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="MemberStatusHistory_Dataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="VW_MEMBERSTATUS_HISTORY">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="mcode" type="xs:string" minOccurs="0" />
+							<xs:element name="mname" type="xs:string" minOccurs="0" />
+							<xs:element name="curentstatus" type="xs:string" minOccurs="0" />
+							<xs:element name="doj" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="statusdatefrom" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="statusdateto" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="mm_memberledger">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SLNO" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:decimal" />
+							<xs:element name="ReferenceNo" type="xs:string" minOccurs="0" />
+							<xs:element name="ReferenceName" type="xs:string" minOccurs="0" />
+							<xs:element name="MCODE" type="xs:string" minOccurs="0" />
+							<xs:element name="PRESENTSTATUS" type="xs:string" minOccurs="0" />
+							<xs:element name="NEWSTATUS" type="xs:string" minOccurs="0" />
+							<xs:element name="REMARKS" type="xs:string" minOccurs="0" />
+							<xs:element name="EFFECTIVEFROM" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="EFFECTIVETO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="USERID" type="xs:string" minOccurs="0" />
+							<xs:element name="ADDDATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="mname" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="MM_MEMBERSTATUSHISTORYLIST">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="mcode" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="mname" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="PRESENTSTATUS" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="NEWSTATUS" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="REMARKS" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="EFFECTIVEFROM" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="EFFECTIVETO" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ADDDATE" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="membertypecode" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="type" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="curentstatus" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

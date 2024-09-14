@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Dataset8" targetNamespace="http://tempuri.org/Dataset8.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Dataset8.xsd" xmlns:mstns="http://tempuri.org/Dataset8.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Dataset8" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="VIEW_POS_SUMMARY">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="billdate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="SNO" type="xs:string" />
+							<xs:element name="SLCODE" type="xs:string" minOccurs="0" />
+							<xs:element name="HEADDESC" type="xs:string" minOccurs="0" />
+							<xs:element name="DRAMOUNT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CRAMOUNT" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="month_bill">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="amount" type="xs:decimal" minOccurs="0" />
+							<xs:element name="description" type="xs:string" minOccurs="0" />
+							<xs:element name="mcode" type="xs:string" minOccurs="0" />
+							<xs:element name="order_no" type="xs:decimal" minOccurs="0" />
+							<xs:element name="date" type="xs:dateTime" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="membermaster">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SequenceNo" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:decimal" />
+							<xs:element name="TAG" type="xs:string" minOccurs="0" />
+							<xs:element name="MEMBERTYPECODE" type="xs:string" minOccurs="0" />
+							<xs:element name="COMPANY" type="xs:string" minOccurs="0" />
+							<xs:element name="SUBCD" type="xs:string" minOccurs="0" />
+							<xs:element name="MCODE" type="xs:string" />
+							<xs:element name="MNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="MID" type="xs:string" minOccurs="0" />
+							<xs:element name="DOB" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DOJ" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="SEX" type="xs:string" minOccurs="0" />
+							<xs:element name="MARITALSTATUS" type="xs:string" minOccurs="0" />
+							<xs:element name="SPOUSE" type="xs:string" minOccurs="0" />
+							<xs:element name="BG" type="xs:string" minOccurs="0" />
+							<xs:element name="OCCUPATION" type="xs:string" minOccurs="0" />
+							<xs:element name="BANKER" type="xs:string" minOccurs="0" />
+							<xs:element name="BANKACNO" type="xs:string" minOccurs="0" />
+							<xs:element name="HOBBIES" type="xs:string" minOccurs="0" />
+							<xs:element name="OTHERINFO" type="xs:string" minOccurs="0" />
+							<xs:element name="RESIDENT" type="xs:string" minOccurs="0" />
+							<xs:element name="EQUALIFICATION" type="xs:string" minOccurs="0" />
+							<xs:element name="PQUALIFICATION" type="xs:string" minOccurs="0" />
+							<xs:element name="PROPOSER" type="xs:string" minOccurs="0" />
+							<xs:element name="PROPOSERNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="SECONDER" type="xs:string" minOccurs="0" />
+							<xs:element name="SECONDERNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="PAcopyst" type="xs:string" minOccurs="0" />
+							<xs:element name="PADD1" type="xs:string" minOccurs="0" />
+							<xs:element name="PADD2" type="xs:string" minOccurs="0" />
+							<xs:element name="PADD3" type="xs:string" minOccurs="0" />
+							<xs:element name="PCITY" type="xs:string" minOccurs="0" />
+							<xs:element name="PSTATE" type="xs:string" minOccurs="0" />
+							<xs:element name="PCOUNTRY" type="xs:string" minOccurs="0" />
+							<xs:element name="PPIN" type="xs:string" minOccurs="0" />
+							<xs:element name="PPHONE1" type="xs:string" minOccurs="0" />
+							<xs:element name="PPHONE2" type="xs:string" minOccurs="0" />
+							<xs:element name="PCELL" type="xs:string" minOccurs="0" />
+							<xs:element name="PEMAIL" type="xs:string" minOccurs="0" />
+							<xs:element name="RAcopyst" type="xs:string" minOccurs="0" />
+							<xs:element name="CADD1" type="xs:string" minOccurs="0" />
+							<xs:element name="CADD2" type="xs:string" minOccurs="0" />
+							<xs:element name="CADD3" type="xs:string" minOccurs="0" />
+							<xs:element name="CCITY" type="xs:string" minOccurs="0" />
+							<xs:element name="CSTATE" type="xs:string" minOccurs="0" />
+							<xs:element name="CCOUNTRY" type="xs:string" minOccurs="0" />
+							<xs:element name="CPIN" type="xs:string" minOccurs="0" />
+							<xs:element name="CPHONE1" type="xs:string" minOccurs="0" />
+							<xs:element name="CPHONE2" type="xs:string" minOccurs="0" />
+							<xs:element name="CCELL" type="xs:string" minOccurs="0" />
+							<xs:element name="CEMAIL" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTADD1" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTADD2" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTADD3" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTCITY" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTSTATE" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTCOUNTRY" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTPIN" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTPHONE1" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTPHONE2" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTCELL" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTEMAIL" type="xs:string" minOccurs="0" />
+							<xs:element name="EMPTYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="BUSINESSNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="BAcopyst" type="xs:string" minOccurs="0" />
+							<xs:element name="OADD1" type="xs:string" minOccurs="0" />
+							<xs:element name="OADD2" type="xs:string" minOccurs="0" />
+							<xs:element name="OADD3" type="xs:string" minOccurs="0" />
+							<xs:element name="OCITY" type="xs:string" minOccurs="0" />
+							<xs:element name="OSTATE" type="xs:string" minOccurs="0" />
+							<xs:element name="OCOUNTRY" type="xs:string" minOccurs="0" />
+							<xs:element name="OPIN" type="xs:string" minOccurs="0" />
+							<xs:element name="OPHONE1" type="xs:string" minOccurs="0" />
+							<xs:element name="OPHONE2" type="xs:string" minOccurs="0" />
+							<xs:element name="DOEPROFESSION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="BUSINESSNATURE" type="xs:string" minOccurs="0" />
+							<xs:element name="POSITIONHELD" type="xs:string" minOccurs="0" />
+							<xs:element name="SERVICENAME" type="xs:string" minOccurs="0" />
+							<xs:element name="SERVICEYEAR" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PANO" type="xs:string" minOccurs="0" />
+							<xs:element name="BBANKER" type="xs:string" minOccurs="0" />
+							<xs:element name="CCNO" type="xs:string" minOccurs="0" />
+							<xs:element name="ANNUALINCOME" type="xs:decimal" minOccurs="0" />
+							<xs:element name="UPDUSERID" type="xs:string" minOccurs="0" />
+							<xs:element name="UPDDATETIME" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TERMINATION" type="xs:string" minOccurs="0" />
+							<xs:element name="TRN_CON_DATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CON_MCODE" type="xs:string" minOccurs="0" />
+							<xs:element name="PFAX" type="xs:string" minOccurs="0" />
+							<xs:element name="CFAX" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTFAX" type="xs:string" minOccurs="0" />
+							<xs:element name="REASON" type="xs:string" minOccurs="0" />
+							<xs:element name="PHOTO" type="xs:string" minOccurs="0" />
+							<xs:element name="CREDITLIMIT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="LIMITAMOUNT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="WEBSITE" type="xs:string" minOccurs="0" />
+							<xs:element name="Imagefile" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="sizefield" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Vdate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Vyear" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Validdate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TempTermination" type="xs:string" minOccurs="0" />
+							<xs:element name="TempTermDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TempTermReason" type="xs:string" minOccurs="0" />
+							<xs:element name="Memberid" type="xs:string" minOccurs="0" />
+							<xs:element name="EndingDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TotalYears" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CardNo" type="xs:string" minOccurs="0" />
+							<xs:element name="CardExpDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Validity" type="xs:string" minOccurs="0" />
+							<xs:element name="Period" type="xs:string" minOccurs="0" />
+							<xs:element name="Creditcardno" type="xs:string" minOccurs="0" />
+							<xs:element name="CreditExpDt" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Type" type="xs:string" minOccurs="0" />
+							<xs:element name="STATUSDATEFROM" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="STATUSDATETO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CurentStatus" type="xs:string" minOccurs="0" />
+							<xs:element name="FirstName" type="xs:string" minOccurs="0" />
+							<xs:element name="MiddleName" type="xs:string" minOccurs="0" />
+							<xs:element name="Surname" type="xs:string" minOccurs="0" />
+							<xs:element name="Alias" type="xs:string" minOccurs="0" />
+							<xs:element name="Prefix" type="xs:string" minOccurs="0" />
+							<xs:element name="BillType" type="xs:string" minOccurs="0" />
+							<xs:element name="Nationality" type="xs:string" minOccurs="0" />
+							<xs:element name="NationalityAtbirth" type="xs:string" minOccurs="0" />
+							<xs:element name="Billbasis" type="xs:string" minOccurs="0" />
+							<xs:element name="BillHead" type="xs:string" minOccurs="0" />
+							<xs:element name="GDRLocker" type="xs:string" minOccurs="0" />
+							<xs:element name="LDRLocker" type="xs:string" minOccurs="0" />
+							<xs:element name="HPLocker" type="xs:string" minOccurs="0" />
+							<xs:element name="MembershipTo" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="salut" type="xs:string" minOccurs="0" />
+							<xs:element name="EntranceFee" type="xs:double" minOccurs="0" />
+							<xs:element name="DevelopmentFee" type="xs:double" minOccurs="0" />
+							<xs:element name="CriditNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="SecurityDeposit" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PlaceOfBirth" type="xs:string" minOccurs="0" />
+							<xs:element name="CountryOfBirth" type="xs:string" minOccurs="0" />
+							<xs:element name="LastArrivalInCal" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PeriodOfStay_year" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PeriodOfStay_Month" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PreviouslyProposed" type="xs:string" minOccurs="0" />
+							<xs:element name="NoOfTimesProposed" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DateOfProposal" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ResultOfProposal" type="xs:string" minOccurs="0" />
+							<xs:element name="Elected" type="xs:string" minOccurs="0" />
+							<xs:element name="FatherName" type="xs:string" minOccurs="0" />
+							<xs:element name="DOBfather" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="WifeDOB" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="MaidenNameWife" type="xs:string" minOccurs="0" />
+							<xs:element name="NationalityWife" type="xs:string" minOccurs="0" />
+							<xs:element name="WifesFatherName" type="xs:string" minOccurs="0" />
+							<xs:element name="WifeFatherDOB" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ApplNo" type="xs:string" minOccurs="0" />
+							<xs:element name="ApplDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Corporatest" type="xs:string" minOccurs="0" />
+							<xs:element name="CorporateCode" type="xs:string" minOccurs="0" />
+							<xs:element name="CompName" type="xs:string" minOccurs="0" />
+							<xs:element name="Designation" type="xs:string" minOccurs="0" />
+							<xs:element name="ProfessionInfo" type="xs:string" minOccurs="0" />
+							<xs:element name="BuisnessInfo" type="xs:string" minOccurs="0" />
+							<xs:element name="Products" type="xs:string" minOccurs="0" />
+							<xs:element name="AgentsDealers" type="xs:string" minOccurs="0" />
+							<xs:element name="ESTDdate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="NoOfEmp" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Turnover" type="xs:double" minOccurs="0" />
+							<xs:element name="Client" type="xs:string" minOccurs="0" />
+							<xs:element name="AppliedBut" type="xs:string" minOccurs="0" />
+							<xs:element name="PositionInChamber" type="xs:string" minOccurs="0" />
+							<xs:element name="Qulificationstatus" type="xs:string" minOccurs="0" />
+							<xs:element name="Qualification1" type="xs:string" minOccurs="0" />
+							<xs:element name="Details1" type="xs:string" minOccurs="0" />
+							<xs:element name="YearOfPassing1" type="xs:string" minOccurs="0" />
+							<xs:element name="Institute1" type="xs:string" minOccurs="0" />
+							<xs:element name="Division1" type="xs:string" minOccurs="0" />
+							<xs:element name="Qualification2" type="xs:string" minOccurs="0" />
+							<xs:element name="Details2" type="xs:string" minOccurs="0" />
+							<xs:element name="YearOfPassing2" type="xs:string" minOccurs="0" />
+							<xs:element name="Institute2" type="xs:string" minOccurs="0" />
+							<xs:element name="Division2" type="xs:string" minOccurs="0" />
+							<xs:element name="Qualification3" type="xs:string" minOccurs="0" />
+							<xs:element name="Details3" type="xs:string" minOccurs="0" />
+							<xs:element name="YearOfPassing3" type="xs:string" minOccurs="0" />
+							<xs:element name="Institute3" type="xs:string" minOccurs="0" />
+							<xs:element name="Division3" type="xs:string" minOccurs="0" />
+							<xs:element name="sportstatus" type="xs:string" minOccurs="0" />
+							<xs:element name="GameType1" type="xs:string" minOccurs="0" />
+							<xs:element name="NameOfGame1" type="xs:string" minOccurs="0" />
+							<xs:element name="Description1" type="xs:string" minOccurs="0" />
+							<xs:element name="GameType2" type="xs:string" minOccurs="0" />
+							<xs:element name="NameofGame2" type="xs:string" minOccurs="0" />
+							<xs:element name="Description2" type="xs:string" minOccurs="0" />
+							<xs:element name="GameType3" type="xs:string" minOccurs="0" />
+							<xs:element name="NameOfGame3" type="xs:string" minOccurs="0" />
+							<xs:element name="Description3" type="xs:string" minOccurs="0" />
+							<xs:element name="Childstatus" type="xs:string" minOccurs="0" />
+							<xs:element name="ChildName1" type="xs:string" minOccurs="0" />
+							<xs:element name="ChildfDob1" type="xs:string" minOccurs="0" />
+							<xs:element name="ChildSex1" type="xs:string" minOccurs="0" />
+							<xs:element name="ChildExpairy1" type="xs:string" minOccurs="0" />
+							<xs:element name="ChildName2" type="xs:string" minOccurs="0" />
+							<xs:element name="ChildDob2" type="xs:string" minOccurs="0" />
+							<xs:element name="ChildSex2" type="xs:string" minOccurs="0" />
+							<xs:element name="ChildExpairy2" type="xs:string" minOccurs="0" />
+							<xs:element name="ChildName3" type="xs:string" minOccurs="0" />
+							<xs:element name="ChildDob3" type="xs:string" minOccurs="0" />
+							<xs:element name="ChildSex3" type="xs:string" minOccurs="0" />
+							<xs:element name="childExpairy3" type="xs:string" minOccurs="0" />
+							<xs:element name="Clubstatus" type="xs:string" minOccurs="0" />
+							<xs:element name="OtherClubName1" type="xs:string" minOccurs="0" />
+							<xs:element name="OCAddress1" type="xs:string" minOccurs="0" />
+							<xs:element name="OCStatus1" type="xs:string" minOccurs="0" />
+							<xs:element name="OtherClubName2" type="xs:string" minOccurs="0" />
+							<xs:element name="OCAddress2" type="xs:string" minOccurs="0" />
+							<xs:element name="OCStatus2" type="xs:string" minOccurs="0" />
+							<xs:element name="OtherClubname3" type="xs:string" minOccurs="0" />
+							<xs:element name="OCAddress3" type="xs:string" minOccurs="0" />
+							<xs:element name="OCStataus" type="xs:string" minOccurs="0" />
+							<xs:element name="adduser" type="xs:string" minOccurs="0" />
+							<xs:element name="adddate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="freeze" type="xs:string" minOccurs="0" />
+							<xs:element name="Relativestatus" type="xs:string" minOccurs="0" />
+							<xs:element name="RelativeName1" type="xs:string" minOccurs="0" />
+							<xs:element name="Relation1" type="xs:string" minOccurs="0" />
+							<xs:element name="dateofbirth1" type="xs:string" minOccurs="0" />
+							<xs:element name="Relativeage1" type="xs:string" minOccurs="0" />
+							<xs:element name="RelativeSex1" type="xs:string" minOccurs="0" />
+							<xs:element name="Relativeaddress1" type="xs:string" minOccurs="0" />
+							<xs:element name="RelativeName2" type="xs:string" minOccurs="0" />
+							<xs:element name="Relation2" type="xs:string" minOccurs="0" />
+							<xs:element name="dateofbirth2" type="xs:string" minOccurs="0" />
+							<xs:element name="Relativeage2" type="xs:string" minOccurs="0" />
+							<xs:element name="RelativeSex2" type="xs:string" minOccurs="0" />
+							<xs:element name="Relativeaddress2" type="xs:string" minOccurs="0" />
+							<xs:element name="RelativeName3" type="xs:string" minOccurs="0" />
+							<xs:element name="Relation3" type="xs:string" minOccurs="0" />
+							<xs:element name="dateofbirth3" type="xs:string" minOccurs="0" />
+							<xs:element name="Relativeage3" type="xs:string" minOccurs="0" />
+							<xs:element name="RelativeSex3" type="xs:string" minOccurs="0" />
+							<xs:element name="Relativeaddress3" type="xs:string" minOccurs="0" />
+							<xs:element name="referentialst" type="xs:string" minOccurs="0" />
+							<xs:element name="mem_code1" type="xs:string" minOccurs="0" />
+							<xs:element name="mem_name1" type="xs:string" minOccurs="0" />
+							<xs:element name="refmem_date1" type="xs:string" minOccurs="0" />
+							<xs:element name="deleted1" type="xs:string" minOccurs="0" />
+							<xs:element name="mem_code2" type="xs:string" minOccurs="0" />
+							<xs:element name="mem_name2" type="xs:string" minOccurs="0" />
+							<xs:element name="refmem_date2" type="xs:string" minOccurs="0" />
+							<xs:element name="deleted2" type="xs:string" minOccurs="0" />
+							<xs:element name="mem_code3" type="xs:string" minOccurs="0" />
+							<xs:element name="mem_name3" type="xs:string" minOccurs="0" />
+							<xs:element name="refmem_date3" type="xs:string" minOccurs="0" />
+							<xs:element name="deleted3" type="xs:string" minOccurs="0" />
+							<xs:element name="entrancefeest" type="xs:string" minOccurs="0" />
+							<xs:element name="receiptno1" type="xs:string" minOccurs="0" />
+							<xs:element name="startdate1" type="xs:string" minOccurs="0" />
+							<xs:element name="amount1" type="xs:string" minOccurs="0" />
+							<xs:element name="receiptno2" type="xs:string" minOccurs="0" />
+							<xs:element name="startdate2" type="xs:string" minOccurs="0" />
+							<xs:element name="amount2" type="xs:string" minOccurs="0" />
+							<xs:element name="receiptno3" type="xs:string" minOccurs="0" />
+							<xs:element name="startdate3" type="xs:string" minOccurs="0" />
+							<xs:element name="amount3" type="xs:string" minOccurs="0" />
+							<xs:element name="OLD" type="xs:string" minOccurs="0" />
+							<xs:element name="CardAmt" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MINIMUMUSAGE" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CREDITNO" type="xs:string" minOccurs="0" />
+							<xs:element name="SPOUSEMOBILE" type="xs:string" minOccurs="0" />
+							<xs:element name="PADD4" type="xs:string" minOccurs="0" />
+							<xs:element name="CADD4" type="xs:string" minOccurs="0" />
+							<xs:element name="email_flag" type="xs:string" minOccurs="0" />
+							<xs:element name="ebill" type="xs:string" minOccurs="0" />
+							<xs:element name="wedding_date" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ChildDob1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ACCD" type="xs:string" minOccurs="0" />
+							<xs:element name="MAINACCD" type="xs:string" minOccurs="0" />
+							<xs:element name="CODE" type="xs:string" minOccurs="0" />
+							<xs:element name="CLUBCODE" type="xs:string" minOccurs="0" />
+							<xs:element name="SRSTATUS" type="xs:string" minOccurs="0" />
+							<xs:element name="OCELL" type="xs:string" minOccurs="0" />
+							<xs:element name="OEMAIL" type="xs:string" minOccurs="0" />
+							<xs:element name="plotno" type="xs:string" minOccurs="0" />
+							<xs:element name="societyno" type="xs:string" minOccurs="0" />
+							<xs:element name="creditstopflag" type="xs:string" minOccurs="0" />
+							<xs:element name="creditstopdate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="MSORDERNO" type="xs:string" minOccurs="0" />
+							<xs:element name="PrefixMcode" type="xs:string" minOccurs="0" />
+							<xs:element name="ICNO" type="xs:string" minOccurs="0" />
+							<xs:element name="UnitNo" type="xs:string" minOccurs="0" />
+							<xs:element name="RankNo" type="xs:string" minOccurs="0" />
+							<xs:element name="DateOfCommission" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateOfRelease" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateOfCreation" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="BTGroup" type="xs:string" minOccurs="0" />
+							<xs:element name="MDescription" type="xs:string" minOccurs="0" />
+							<xs:element name="RIDCardNo" type="xs:string" minOccurs="0" />
+							<xs:element name="ArmService" type="xs:string" minOccurs="0" />
+							<xs:element name="WO" type="xs:string" minOccurs="0" />
+							<xs:element name="NoOfDependencies" type="xs:string" minOccurs="0" />
+							<xs:element name="AnniversaryDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="RByMemberNo" type="xs:string" minOccurs="0" />
+							<xs:element name="RByMemberNo2" type="xs:string" minOccurs="0" />
+							<xs:element name="RByName" type="xs:string" minOccurs="0" />
+							<xs:element name="RByMemberName2" type="xs:string" minOccurs="0" />
+							<xs:element name="ArmyNo" type="xs:string" minOccurs="0" />
+							<xs:element name="RankName" type="xs:string" minOccurs="0" />
+							<xs:element name="BarcodeNo" type="xs:string" minOccurs="0" />
+							<xs:element name="DependentID" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MemberType" type="xs:string" minOccurs="0" />
+							<xs:element name="MemImage" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="MemImageSign" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="SpouseImage" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="TaxFlag" type="xs:string" minOccurs="0" />
+							<xs:element name="MLedgerName" type="xs:string" minOccurs="0" />
+							<xs:element name="F_Mcode" type="xs:string" minOccurs="0" />
+							<xs:element name="NOMINEE" type="xs:string" minOccurs="0" />
+							<xs:element name="SDOB" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ENC_SMARTCARDNO" type="xs:string" minOccurs="0" />
+							<xs:element name="MTORDERNO" type="xs:string" minOccurs="0" />
+							<xs:element name="RAcopyst1" type="xs:string" minOccurs="0" />
+							<xs:element name="PAcopyst1" type="xs:string" minOccurs="0" />
+							<xs:element name="BAcopyst1" type="xs:string" minOccurs="0" />
+							<xs:element name="MARITAL_STATUS" type="xs:string" minOccurs="0" />
+							<xs:element name="religion" type="xs:string" minOccurs="0" />
+							<xs:element name="oldmcode" type="xs:string" minOccurs="0" />
+							<xs:element name="newmcode" type="xs:string" minOccurs="0" />
+							<xs:element name="Memberdesigncode" type="xs:string" minOccurs="0" />
+							<xs:element name="Citycode" type="xs:string" minOccurs="0" />
+							<xs:element name="Statecode" type="xs:string" minOccurs="0" />
+							<xs:element name="SaluatationCode" type="xs:string" minOccurs="0" />
+							<xs:element name="ReligionCode" type="xs:string" minOccurs="0" />
+							<xs:element name="Countrycode" type="xs:string" minOccurs="0" />
+							<xs:element name="MemberMaritialcode" type="xs:string" minOccurs="0" />
+							<xs:element name="spouseprefix" type="xs:string" minOccurs="0" />
+							<xs:element name="SpouseFreeze" type="xs:string" minOccurs="0" />
+							<xs:element name="MEMLIMIT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CATLIMIT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="REPLACEMENT" type="xs:string" minOccurs="0" />
+							<xs:element name="RNO" type="xs:string" minOccurs="0" />
+							<xs:element name="spouseimagesign" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="dow" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="glcode" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="View_drcr_Det">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="billno" type="xs:string" />
+							<xs:element name="billdate" type="xs:dateTime" />
+							<xs:element name="SLCODE" type="xs:string" minOccurs="0" />
+							<xs:element name="Dramount" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Cramount" type="xs:decimal" minOccurs="0" />
+							<xs:element name="locdesc" type="xs:string" />
+							<xs:element name="loccode" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="View_Rec_Det">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="billno" type="xs:string" />
+							<xs:element name="billdate" type="xs:dateTime" />
+							<xs:element name="SLCODE" type="xs:string" minOccurs="0" />
+							<xs:element name="Dramount" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Cramount" type="xs:decimal" minOccurs="0" />
+							<xs:element name="locdesc" type="xs:string" />
+							<xs:element name="loccode" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

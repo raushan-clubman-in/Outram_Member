@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Remainderletter" targetNamespace="http://tempuri.org/Remainderletter.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Remainderletter.xsd" xmlns:mstns="http://tempuri.org/Remainderletter.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Remainderletter" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="outstandrpt_summary">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="mcode" type="xs:string" minOccurs="0" />
+							<xs:element name="slname" type="xs:string" minOccurs="0" />
+							<xs:element name="type" type="xs:string" minOccurs="0" />
+							<xs:element name="curentstatus" type="xs:string" minOccurs="0" />
+							<xs:element name="add1" type="xs:string" minOccurs="0" />
+							<xs:element name="add2" type="xs:string" minOccurs="0" />
+							<xs:element name="add3" type="xs:string" minOccurs="0" />
+							<xs:element name="city" type="xs:string" minOccurs="0" />
+							<xs:element name="pin" type="xs:string" minOccurs="0" />
+							<xs:element name="phone" type="xs:string" minOccurs="0" />
+							<xs:element name="opbal" type="xs:decimal" minOccurs="0" />
+							<xs:element name="creditamt" type="xs:decimal" minOccurs="0" />
+							<xs:element name="debitamt" type="xs:decimal" minOccurs="0" />
+							<xs:element name="asoncreditamt" type="xs:decimal" minOccurs="0" />
+							<xs:element name="asondebitamt" type="xs:decimal" minOccurs="0" />
+							<xs:element name="clbal" type="xs:decimal" minOccurs="0" />
+							<xs:element name="asonclbal" type="xs:decimal" minOccurs="0" />
+							<xs:element name="orderno" type="xs:decimal" minOccurs="0" />
+							<xs:element name="prefix" type="xs:string" minOccurs="0" />
+							<xs:element name="typeorder" type="xs:decimal" minOccurs="0" />
+							<xs:element name="catlimit" type="xs:decimal" minOccurs="0" />
+							<xs:element name="memlimit" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

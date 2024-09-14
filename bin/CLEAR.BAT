@@ -1,0 +1,3 @@
+CD REPORTS
+DEL  *.TXT
+DEL  *.BAT

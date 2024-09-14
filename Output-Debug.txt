@@ -1,0 +1,23 @@
+'DefaultDomain': Loaded 'c:\windows\microsoft.net\framework\v1.1.4322\mscorlib.dll', No symbols loaded.
+'Member': Loaded 'E:\NONRSICLUBS\MEMBER\CLUBMEMBER26012012\bin\Member.exe', Symbols loaded.
+'Member.exe': Loaded 'c:\windows\assembly\gac\system.windows.forms\1.0.5000.0__b77a5c561934e089\system.windows.forms.dll', No symbols loaded.
+'Member.exe': Loaded 'c:\windows\assembly\gac\system\1.0.5000.0__b77a5c561934e089\system.dll', No symbols loaded.
+'Member.exe': Loaded 'c:\windows\assembly\gac\system.drawing\1.0.5000.0__b03f5f7f11d50a3a\system.drawing.dll', No symbols loaded.
+'Member.exe': Loaded 'c:\windows\assembly\gac\system.data\1.0.5000.0__b77a5c561934e089\system.data.dll', No symbols loaded.
+'Member.exe': Loaded 'c:\windows\assembly\gac\system.xml\1.0.5000.0__b77a5c561934e089\system.xml.dll', No symbols loaded.
+'Member.exe': Loaded 'c:\windows\assembly\gac\microsoft.visualbasic\7.0.5000.0__b03f5f7f11d50a3a\microsoft.visualbasic.dll', No symbols loaded.
+'Member.exe': Loaded 'c:\windows\assembly\gac\system.enterpriseservices\1.0.5000.0__b03f5f7f11d50a3a\system.enterpriseservices.dll', No symbols loaded.
+'Member.exe': Loaded 'c:\windows\assembly\gac\system.enterpriseservices\1.0.5000.0__b03f5f7f11d50a3a\system.enterpriseservices.thunk.dll', No symbols loaded.
+'Member.exe': Loaded 'e:\nonrsiclubs\member\clubmember26012012\bin\axinterop.msflexgridlib.dll', No symbols loaded.
+'Member.exe': Loaded 'e:\nonrsiclubs\member\clubmember26012012\bin\interop.msflexgridlib.dll', No symbols loaded.
+'Member.exe': Loaded 'e:\nonrsiclubs\member\clubmember26012012\bin\axinterop.fpuspreadado.dll', No symbols loaded.
+'Member.exe': Loaded 'c:\windows\assembly\gac\msdatasrc\7.0.3300.0__b03f5f7f11d50a3a\msdatasrc.dll', No symbols loaded.
+'Member.exe': Loaded 'e:\nonrsiclubs\member\clubmember26012012\bin\interop.fpuspreadado.dll', No symbols loaded.
+'Member.exe': Loaded 'c:\windows\assembly\gac\accessibility\1.0.5000.0__b03f5f7f11d50a3a\accessibility.dll', No symbols loaded.
+The thread '<No Name>' (0x62c) has exited with code 0 (0x0).
+The thread '<No Name>' (0x6e8) has exited with code 0 (0x0).
+The thread '<No Name>' (0x13c8) has exited with code 0 (0x0).
+The thread '<No Name>' (0x1758) has exited with code 0 (0x0).
+The thread '<No Name>' (0x208) has exited with code 0 (0x0).
+The thread '<No Name>' (0x11b8) has exited with code 0 (0x0).
+The program '[5936] Member.exe' has exited with code 0 (0x0).

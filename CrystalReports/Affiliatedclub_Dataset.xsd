@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Affiliatedclub_Dataset" targetNamespace="http://tempuri.org/Affiliatedclub_Dataset.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/Affiliatedclub_Dataset.xsd"
+	xmlns:mstns="http://tempuri.org/Affiliatedclub_Dataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Affiliatedclub_Dataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="vw_affiliatedclubdetails">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Rowid" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:decimal" />
+							<xs:element name="CLUBCODE" type="xs:string" minOccurs="0" />
+							<xs:element name="CLUBNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="ADDRESS1" type="xs:string" minOccurs="0" />
+							<xs:element name="ADDRESS2" type="xs:string" minOccurs="0" />
+							<xs:element name="CITY" type="xs:string" minOccurs="0" />
+							<xs:element name="STATE" type="xs:string" minOccurs="0" />
+							<xs:element name="PINCODE" type="xs:string" minOccurs="0" />
+							<xs:element name="PHONE1" type="xs:string" minOccurs="0" />
+							<xs:element name="PHONE2" type="xs:string" minOccurs="0" />
+							<xs:element name="FAX" type="xs:string" minOccurs="0" />
+							<xs:element name="EMAIL" type="xs:string" minOccurs="0" />
+							<xs:element name="ADDUSERID" type="xs:string" minOccurs="0" />
+							<xs:element name="ADDDATETIME" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="UPDUSERID" type="xs:string" minOccurs="0" />
+							<xs:element name="UPDDATETIME" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ACPLACE" type="xs:string" minOccurs="0" />
+							<xs:element name="STDCODE" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ROOM" type="xs:string" minOccurs="0" />
+							<xs:element name="WEBSITE" type="xs:string" minOccurs="0" />
+							<xs:element name="FACILITY" type="xs:string" minOccurs="0" />
+							<xs:element name="Contactperson" type="xs:string" minOccurs="0" />
+							<xs:element name="freeze" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

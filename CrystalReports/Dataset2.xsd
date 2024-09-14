@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Dataset2" targetNamespace="http://tempuri.org/Dataset2.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Dataset2.xsd" xmlns:mstns="http://tempuri.org/Dataset2.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Dataset2" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="VIEW_MEM_RPR">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MCODE" type="xs:string" />
+							<xs:element name="MNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="DOB" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DOJ" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CurentStatus" type="xs:string" minOccurs="0" />
+							<xs:element name="MEMBERTYPECODE" type="xs:string" minOccurs="0" />
+							<xs:element name="mem_code" type="xs:string" minOccurs="0" />
+							<xs:element name="name" type="xs:string" minOccurs="0" />
+							<xs:element name="relation" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="FACILITY_RPT">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MCODE" type="xs:string" minOccurs="0" />
+							<xs:element name="DNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="FCODE" type="xs:string" minOccurs="0" />
+							<xs:element name="SUBSDESC" type="xs:string" />
+							<xs:element name="MEMBERTYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="APR" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MAY" type="xs:decimal" minOccurs="0" />
+							<xs:element name="JUN" type="xs:decimal" minOccurs="0" />
+							<xs:element name="JUL" type="xs:decimal" minOccurs="0" />
+							<xs:element name="AUG" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SEP" type="xs:decimal" minOccurs="0" />
+							<xs:element name="OCT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="NOV" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DEC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="JAN" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FEB" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MAR" type="xs:decimal" minOccurs="0" />
+							<xs:element name="STAXAMT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SCHG" type="xs:decimal" minOccurs="0" />
+							<xs:element name="NETAMOUNT" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="MM_SUBSCRIPTIONLIST">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="mcode" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="mname" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="TypeDesc" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="curentstatus" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="Subscode" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="Subsdesc" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="type" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="MM_VIEW_DATEOFJOIN">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="mcode" type="xs:string" />
+							<xs:element name="mname" type="xs:string" minOccurs="0" />
+							<xs:element name="Dojdiff" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="DOJ" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
