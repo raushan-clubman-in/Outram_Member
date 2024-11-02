@@ -338,6 +338,7 @@ Public Class newwelcome
 
         Try
             SQLSTRING = "SELECT * FROM USERADMIN WHERE  USERNAME = '" & Trim(UCase(Txt_Username.Text)) & "' and USERPASSWORD ='" & Trim(GetPassword(UCase(Txt_Password.Text))) & "'"
+            'SQLSTRING = "SELECT * FROM USERADMIN WHERE  USERNAME = '" & Trim(UCase(Txt_Username.Text)) & "' and USERPASSWORD ='" & Trim(UCase(Txt_Password.Text)) & "'"
             gconnection.getCompanyinfo(SQLSTRING, "ClubMaster")
             If gdataset.Tables("ClubMaster").Rows.Count > 0 Then
                 gUsername = Trim(Txt_Username.Text)
@@ -393,7 +394,7 @@ Public Class newwelcome
             sql = sql & AppPath & "\DBS_KEY.MDB"
             ServerConn.ConnectionString = sql
             ServerConn.Open()
-            ssql = "SELECT SERVER,USERNAME,PASSWORD,PRODUCTKEY,PHOTOPATH FROM DBSKEY"
+            ssql = "SELECT SERVER,USERNAME,PASSWORD,PRODUCTKEY,PHOTOPATH,PDFPATH FROM DBSKEY"
             servercmd = New OleDb.OleDbDataAdapter(ssql, ServerConn)
             servercmd.Fill(getserver)
             If getserver.Tables(0).Rows.Count > 0 Then
@@ -402,6 +403,7 @@ Public Class newwelcome
                 SQL_Password = Trim(getserver.Tables(0).Rows(0).Item(2) & "")
                 Productkey = Trim(getserver.Tables(0).Rows(0).Item(3) & "")
                 gPhotoPath = Trim(getserver.Tables(0).Rows(0).Item(4) & "")
+                gPDFPath = Trim(getserver.Tables(0).Rows(0).Item(5) & "")
             Else
                 gserver = Environment.MachineName
             End If

@@ -3,6 +3,7 @@ Imports System.Data
 Imports System.Data.SqlClient
 Imports System.IO
 Module GlobalVariables
+    Public gPDFPath As String
     Public gDebtors, gDebdesc As String
     Public vrowcnt As Int16
     Public gCreditors As String

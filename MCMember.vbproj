@@ -2037,6 +2037,25 @@
                     BuildAction = "None"
                 />
                 <File
+                    RelPath = "CrystalReports\Dataset9.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "Dataset9.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset9.vb"
+                    DependentUpon = "Dataset9.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\Dataset9.xsx"
+                    DependentUpon = "Dataset9.xsd"
+                    BuildAction = "None"
+                />
+                <File
                     RelPath = "CrystalReports\DatasetMonthbillng.xsd"
                     BuildAction = "Content"
                     Generator = "MSDataSetGenerator"
@@ -2377,8 +2396,22 @@
                     LastGenOutput = "MONTH_BILL1.vb"
                 />
                 <File
-                    RelPath = "CrystalReports\MONTH_BILL1.vb"
-                    DependentUpon = "MONTH_BILL1.rpt"
+                    RelPath = "CrystalReports\MONTH_BILL2.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "MONTH_BILL2.vb"
+                />
+                <File
+                    RelPath = "CrystalReports\Copy of MONTH_BILL1.vb"
+                    DependentUpon = "MONTH_BILL2.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CrystalReports\MONTH_BILL2.vb"
+                    DependentUpon = "MONTH_BILL2.rpt"
                     SubType = "Component"
                     BuildAction = "Compile"
                     DesignTime = "True"

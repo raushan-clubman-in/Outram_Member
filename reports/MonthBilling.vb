@@ -20,6 +20,8 @@ Public Class MonthBilling
     Dim posting, posting1, dt As New DataTable
     Dim GCONN As New GlobalClass
     Dim MNTH2 As Object
+    Dim vconn As New GlobalClass
+
 
 #Region " Windows Form Designer generated code "
 
@@ -98,6 +100,9 @@ Public Class MonthBilling
     Friend WithEvents Txt_msg1 As System.Windows.Forms.TextBox
     Friend WithEvents rdb_plain As System.Windows.Forms.RadioButton
     Friend WithEvents rdb_mem As System.Windows.Forms.RadioButton
+    Friend WithEvents Txt_Sign As System.Windows.Forms.TextBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(MonthBilling))
         Me.cmd_view = New System.Windows.Forms.Button
@@ -120,6 +125,7 @@ Public Class MonthBilling
         Me.Rnd_Summary = New System.Windows.Forms.RadioButton
         Me.Rnd_Details = New System.Windows.Forms.RadioButton
         Me.GroupBox4 = New System.Windows.Forms.GroupBox
+        Me.Button1 = New System.Windows.Forms.Button
         Me.cmd_ver = New System.Windows.Forms.Button
         Me.Btn_Excel = New System.Windows.Forms.Button
         Me.txt_note = New System.Windows.Forms.TextBox
@@ -149,6 +155,8 @@ Public Class MonthBilling
         Me.cmdclear = New System.Windows.Forms.Button
         Me.cmd_sms = New System.Windows.Forms.Button
         Me.ssgrid_sms = New AxFPUSpreadADO.AxfpSpread
+        Me.Txt_Sign = New System.Windows.Forms.TextBox
+        Me.Label7 = New System.Windows.Forms.Label
         Me.GroupBox4.SuspendLayout()
         Me.Gbx_summardet.SuspendLayout()
         Me.Grp_sms.SuspendLayout()
@@ -175,7 +183,7 @@ Public Class MonthBilling
         Me.Btn_close.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_close.ForeColor = System.Drawing.Color.White
         Me.Btn_close.Image = CType(resources.GetObject("Btn_close.Image"), System.Drawing.Image)
-        Me.Btn_close.Location = New System.Drawing.Point(296, 16)
+        Me.Btn_close.Location = New System.Drawing.Point(528, 16)
         Me.Btn_close.Name = "Btn_close"
         Me.Btn_close.Size = New System.Drawing.Size(104, 32)
         Me.Btn_close.TabIndex = 14
@@ -361,15 +369,29 @@ Public Class MonthBilling
         'GroupBox4
         '
         Me.GroupBox4.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox4.Controls.Add(Me.Button1)
         Me.GroupBox4.Controls.Add(Me.cmd_ver)
         Me.GroupBox4.Controls.Add(Me.cmd_Clear)
         Me.GroupBox4.Controls.Add(Me.cmd_view)
         Me.GroupBox4.Controls.Add(Me.Btn_close)
-        Me.GroupBox4.Location = New System.Drawing.Point(96, 536)
+        Me.GroupBox4.Location = New System.Drawing.Point(32, 536)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(584, 64)
+        Me.GroupBox4.Size = New System.Drawing.Size(648, 64)
         Me.GroupBox4.TabIndex = 629
         Me.GroupBox4.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Location = New System.Drawing.Point(296, 16)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(104, 32)
+        Me.Button1.TabIndex = 641
+        Me.Button1.Text = "DOWNLOAD [F10]"
         '
         'cmd_ver
         '
@@ -607,9 +629,9 @@ Public Class MonthBilling
         Me.Grp_sms.Controls.Add(Me.cmdclear)
         Me.Grp_sms.Controls.Add(Me.cmd_sms)
         Me.Grp_sms.Controls.Add(Me.ssgrid_sms)
-        Me.Grp_sms.Location = New System.Drawing.Point(24, 56)
+        Me.Grp_sms.Location = New System.Drawing.Point(32, 48)
         Me.Grp_sms.Name = "Grp_sms"
-        Me.Grp_sms.Size = New System.Drawing.Size(680, 480)
+        Me.Grp_sms.Size = New System.Drawing.Size(680, 496)
         Me.Grp_sms.TabIndex = 641
         Me.Grp_sms.TabStop = False
         Me.Grp_sms.Visible = False
@@ -704,15 +726,36 @@ Public Class MonthBilling
         Me.ssgrid_sms.Location = New System.Drawing.Point(48, 24)
         Me.ssgrid_sms.Name = "ssgrid_sms"
         Me.ssgrid_sms.OcxState = CType(resources.GetObject("ssgrid_sms.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.ssgrid_sms.Size = New System.Drawing.Size(600, 248)
+        Me.ssgrid_sms.Size = New System.Drawing.Size(600, 448)
         Me.ssgrid_sms.TabIndex = 636
+        '
+        'Txt_Sign
+        '
+        Me.Txt_Sign.Location = New System.Drawing.Point(440, 344)
+        Me.Txt_Sign.Multiline = True
+        Me.Txt_Sign.Name = "Txt_Sign"
+        Me.Txt_Sign.Size = New System.Drawing.Size(240, 24)
+        Me.Txt_Sign.TabIndex = 642
+        Me.Txt_Sign.Text = ""
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(344, 344)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(60, 18)
+        Me.Label7.TabIndex = 643
+        Me.Label7.Text = "SIGN BY"
         '
         'MonthBilling
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(720, 614)
-        Me.Controls.Add(Me.Grp_sms)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Txt_Sign)
         Me.Controls.Add(Me.txt_msg)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtUnitWise)
@@ -724,6 +767,7 @@ Public Class MonthBilling
         Me.Controls.Add(Me.txt_mname)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Grp_sms)
         Me.Controls.Add(Me.PIC1)
         Me.Controls.Add(Me.chk_PrintAllUnitWise)
         Me.Controls.Add(Me.chk_UnitWise)
@@ -752,7 +796,6 @@ Public Class MonthBilling
 
     Private Sub cmd_view_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_view.Click
 
-
         If Rnd_Summary.Checked = True Then
             If gCompanyname = "HYDERABAD GOLF ASSOCIATION" Or gCompanyname = "HGA1112" Then
                 Call GETSUMMARY_PRINT1()
@@ -760,10 +803,12 @@ Public Class MonthBilling
                 Call GETSUMMARY_PRINT_OTHERS()
             End If
         End If
+
         If Rnd_Billutil.Checked = True Then
             Call pdfgen()
             Exit Sub
         End If
+
         If RND_billforward.Checked = True Then
             If gCompanyname = "HYDERABAD GOLF ASSOCIATION" Or gCompanyname = "HGA1112" Then
                 Call bill_Summary_details()
@@ -771,15 +816,17 @@ Public Class MonthBilling
                 Call bill_Summary_details()
             End If
         End If
+
         If Rnd_Details.Checked = True Then
             Call GETSUMMARY_PRINT()
         End If
+
         If Rnd_summardet.Checked = True Then
             Call GETSUMMARYANDDETAILS()
         End If
+
         If Rnd_Xml.Checked = True Then
             Call Xml()
-
         End If
     End Sub
     Private Sub pdfgen()
@@ -1391,10 +1438,12 @@ Public Class MonthBilling
         Dim MEMBERTYPE As New DataTable
         ssql = "select isnull(SUBTYPECODE,'') as membertype,isnull(SUBtypedesc,'') as typedesc from SUBCATEGORYMASTER "
         MEMBERTYPE = gconnection.GetValues(ssql)
+
         Dim Itration
         For Itration = 0 To (MEMBERTYPE.Rows.Count - 1)
             chk_Filter_Field.Items.Add(MEMBERTYPE.Rows(Itration).Item("Membertype") & "." & MEMBERTYPE.Rows(Itration).Item("TypeDesc"))
         Next
+
         LoadUnitNO()
         chk_Filter_Field.Focus()
         RDOCOMBINEDNO.Checked = True
@@ -2253,7 +2302,9 @@ Public Class MonthBilling
             End If
             If Mid(Me.CbxMonth.Text, 1, 5) = "March" Then month1 = 3 : month = "MAR" : noofdays = 31 : bildt = "01/mar/" & Mid(gFinancialYearEnd, 7, 4) : month2 = "03"
             Dim Viewer As New ReportViwer
+
             Dim r As New MONTH_BILL1
+
             If Trim(txt_Tomcode.Text) <> "" And Trim(txt_Tomcode.Text) <> "" Then
                 sqlstrinG = " SELECT ISNULL(M.MCODE,'') AS MCODE,(ISNULL(M.PREFIX,'')+ '' +ISNULL(M.MNAME,'')) AS MNAME,ISNULL(M.CONTADD1,'') AS CONTADD1,ISNULL(M.CONTADD2,'') AS CONTADD2,ISNULL(M.CONTADD3,'') AS CONTADD3,ISNULL(M.CONTCITY,'') AS CONTCITY,ISNULL(M.CONTPIN,'') AS CONTPIN,ISNULL(M.contcell,'') AS contcell,ISNULL(M.MEMBERTYPECODE,'')AS MEMBERTYPECODE, '" & Format(CbxMonth.Value, "dd/MMM/yyyy") & "' AS ADDDATE, (SUM(O.DEBIT)-SUM(O.CREDIT)) AS CREDITLIMIT FROM OPENINGBAL O,MEMBERMASTER M WHERE M.MCODE = O.SLCODE AND M.MCODE BETWEEN '" & txt_mcode.Text & "' AND '" & txt_Tomcode.Text & "' AND O.BILLDATE < '" & bildt & "' AND  CURENTSTATUS IN('LIVE','ACTIVE') AND ISNULL(FREEZE,'')<>'Y' GROUP BY M.MCODE, M.MNAME,M.PREFIX,M.CONTADD1,M.CONTADD2,M.CONTADD3,M.CONTCITY,M.CONTPIN,m.contcell,MEMBERTYPECODE  ORDER BY M.MCODE "
                 sqlstring1 = " select slcode,locdesc,sum(dramount) as dramount,sum(cramount) as cramount "
@@ -2311,10 +2362,16 @@ Public Class MonthBilling
             Dim txtobj18 As TextObject
             Dim txtobj19 As TextObject
             Dim txtobj20 As TextObject
+            Dim txtobj21 As TextObject
+
+            txtobj21 = r.ReportDefinition.ReportObjects("Text20")
+            txtobj21.Text = Txt_Sign.Text
+
             txtobj19 = r.ReportDefinition.ReportObjects("Text13")
             txtobj20 = r.ReportDefinition.ReportObjects("Text8")
             txtobj15 = r.ReportDefinition.ReportObjects("Text7")
             txtobj18 = r.ReportDefinition.ReportObjects("Text5")
+
             'txtobj1 = r.ReportDefinition.ReportObjects("Text29")
             'txtobj1.Text = UCase(gCompanyname)
             'txtobj1 = r.ReportDefinition.ReportObjects("Text30")
@@ -2325,6 +2382,7 @@ Public Class MonthBilling
             'txtobj1.Text = UCase(gCompanyAddress(3))
             'txtobj1 = r.ReportDefinition.ReportObjects("Text34")
             'txtobj1.Text = UCase(txt_msg.Text)
+
             txtobj19.Text = "CREDIT BILL FOR THE MONTH OF " & month & " " & IIf(month1 > 3, Mid(gFinancialyearStart, 7, 4), Mid(gFinancialYearEnd, 7, 4))
             txtobj15.Text = "/" & IIf(month1 > 3, Mid(gFinancialyearStart, 7, 4), Mid(gFinancialYearEnd, 7, 4)) & month2
             txtobj18.Text = noofdays & "-" & IIf(month1 > 9, Str(month1), "0" & month1) & "-" & IIf(month1 > 3, Mid(gFinancialyearStart, 7, 4), Mid(gFinancialYearEnd, 7, 4))
@@ -2336,6 +2394,165 @@ Public Class MonthBilling
             MessageBox.Show(ex.Message)
         End Try
     End Sub
+
+    Private Sub GETSUMMARY_PRINT_OTHERS_DOWNLOAD(ByVal MCODE As String)
+        Try
+            Dim cmdText, billdt2, years, PDFDATE As String
+            Dim duedate, membertype, TYPE(0), month, sql, sqlstrinG, month2 As String
+            Dim opl, i As Integer
+            Call Validation()
+            sqlstrinG = "select ISNULL(subscode,'') as groupcode from subsposting where ISNULL(subscode,'')<>'' group by subscode having SUM(amount)>0"
+            sqlstrinG = sqlstrinG & " union all"
+            sqlstrinG = sqlstrinG & "select ISNULL(taxcode,'') as groupcode from subsposting where ISNULL(taxcode,'')<>'' group by taxcode having SUM(taxamount)>0"
+            sqlstrinG = sqlstrinG & " union all"
+            sqlstrinG = sqlstrinG & " select ISNULL(taxaccountcode,'') as groupcode from kot_det where ISNULL(taxaccountcode,'')<>'' group by TAXACCOUNTCODE having SUM(taxamount)>0 "
+            sqlstrinG = sqlstrinG & " union all"
+            sqlstrinG = sqlstrinG & " select ISNULL(packaccountcode,'') as groupcode from kot_det where ISNULL(PACKACCOUNTCODE,'')<>'' group by PACKACCOUNTCODE having SUM(packamount)>0 "
+            sqlstrinG = sqlstrinG & " union(all)"
+            sqlstrinG = sqlstrinG & " select ISNULL(GROUPCODE,'') as groupcode from kot_det where ISNULL(GROUPCODE,'')<>'' group by GROUPCODE having SUM(amount)>0 "
+            'sqlstring = "ALTER VIEW opbalhga as select slcode,SUM(opbalance) as openingbalance from MM_VIEW_DEBITCREDIT WHERE BILLDATE< '" & bildt & "'GROUP BY SLCODE"
+            'gconnection.dataOperation(3, sqlstring, "opbalhga1")
+            'sqlstring = "ALTER view credhga as Select B.SLCODE,B.OPENINGBALANCE,SUM(isnull(a.DEBITAMOUNT,0))AS DEBITAMOUNT,SUM(isnull(a.CREDIT,0))AS CREDIT,A.mname,A.CONTCELL  from  opbalhga b left outer join MM_VIEW_DEBITCREDIT_DET a on a.slcode=b.SLcode and MONTH(a.BILLDATE)='" & month1 & "' group by b.SLCODE,b.OPENINGBALANCE,A.MNAME,A.CONTCELL"
+            'gconnection.dataOperation(4, sqlstring, "credhga2")
+            'sqlstring1 = "ALTER view credhga1 as select a.slcode,b.mname,b.CONTCELL,a.openingbalance,a.credit,a.debitamount from credhga a inner join membermaster b on a.slcode=b.MCODE"
+            'gconnection.dataOperation(6, sqlstring1, "credhga4")
+            If Mid(Me.CbxMonth.Text, 1, 5) = "April" Then month1 = 4 : month = "APR" : noofdays = 30 : bildt = "01/apr/" & Mid(gFinancialyearStart, 7, 4) : month2 = "04"
+            If Mid(Me.CbxMonth.Text, 1, 3) = "May" Then month1 = 5 : month = "MAY" : noofdays = 31 : bildt = "01/may/" & Mid(gFinancialyearStart, 7, 4) : month2 = "05"
+            If Mid(Me.CbxMonth.Text, 1, 3) = "Jun" Then month1 = 6 : month = "JUN" : noofdays = 30 : bildt = "01/jun/" & Mid(gFinancialyearStart, 7, 4) : month2 = "06"
+            If Mid(Me.CbxMonth.Text, 1, 4) = "July" Then month1 = 7 : month = "JUL" : noofdays = 31 : bildt = "01/jul/" & Mid(gFinancialyearStart, 7, 4) : month2 = "07"
+            If Mid(Me.CbxMonth.Text, 1, 6) = "August" Then month1 = 8 : month = "AUG" : noofdays = 31 : bildt = "01/aug/" & Mid(gFinancialyearStart, 7, 4) : month2 = "08"
+            If Mid(Me.CbxMonth.Text, 1, 9) = "September" Then month1 = 9 : month = "SEP" : noofdays = 30 : bildt = "01/sep/" & Mid(gFinancialyearStart, 7, 4) : month2 = "09"
+            If Mid(Me.CbxMonth.Text, 1, 7) = "October" Then month1 = 10 : month = "OCT" : noofdays = 31 : bildt = "01/oct/" & Mid(gFinancialyearStart, 7, 4) : month2 = "10"
+            If Mid(Me.CbxMonth.Text, 1, 8) = "November" Then month1 = 11 : month = "NOV" : noofdays = 30 : bildt = "01/nov/" & Mid(gFinancialyearStart, 7, 4) : month2 = "11"
+            If Mid(Me.CbxMonth.Text, 1, 8) = "December" Then month1 = 12 : month = "DEC" : noofdays = 31 : bildt = "01/dec/" & Mid(gFinancialyearStart, 7, 4) : month2 = "12"
+            If Mid(Me.CbxMonth.Text, 1, 7) = "January" Then month1 = 1 : month = "JAN" : noofdays = 31 : bildt = "01/jan/" & Mid(gFinancialYearEnd, 7, 4) : month2 = "01"
+            'If Mid(Me.CbxMonth.Text, 1, 8) = "February" Then month1 = 2 : month = "FEB" : noofdays = 28 : bildt = "01/feb/" & Mid(gFinancialYearEnd, 7, 4) : month2 = "02"
+            If Mid(Me.CbxMonth.Text, 1, 8) = "February" Then
+                MNTH2 = Year(gFinancialYearEnd) Mod 4
+                month1 = 2
+                month = "FEB"
+                If MNTH2 = 0 Then
+                    noofdays = 29
+                    bildt = "01/feb/" & Mid(gFinancialYearEnd, 7, 4)
+                Else
+                    noofdays = 28
+                    bildt = "01/feb/" & Mid(gFinancialYearEnd, 7, 4)
+                End If
+                month2 = "02"
+            End If
+            If Mid(Me.CbxMonth.Text, 1, 5) = "March" Then month1 = 3 : month = "MAR" : noofdays = 31 : bildt = "01/mar/" & Mid(gFinancialYearEnd, 7, 4) : month2 = "03"
+
+
+
+            If Mid(Me.CbxMonth.Text, 1, 3) = "Apr" Then month1 = 4 : month = "APR" : noofdays = 30 : bildt = "01/apr/" & gFinancalyearStart : month2 = "04" : billdt2 = "30/apr/" & gFinancalyearStart : years = "APRIL_" & gFinancalyearStart : PDFDATE = "APRIL_" & gFinancalyearStart
+            If Mid(Me.CbxMonth.Text, 1, 3) = "May" Then month1 = 5 : month = "MAY" : noofdays = 31 : bildt = "01/may/" & gFinancalyearStart : month2 = "05" : billdt2 = "31/may/" & gFinancalyearStart : years = "MAY_" & gFinancalyearStart : PDFDATE = "MAY_" & gFinancalyearStart
+            If Mid(Me.CbxMonth.Text, 1, 3) = "Jun" Then month1 = 6 : month = "JUN" : noofdays = 30 : bildt = "01/jun/" & gFinancalyearStart : month2 = "06" : billdt2 = "30/jun/" & gFinancalyearStart : years = "JUNE_" & gFinancalyearStart : PDFDATE = "JUNE_" & gFinancalyearStart
+            If Mid(Me.CbxMonth.Text, 1, 3) = "Jul" Then month1 = 7 : month = "JUL" : noofdays = 31 : bildt = "01/jul/" & gFinancalyearStart : month2 = "07" : billdt2 = "31/jul/" & gFinancalyearStart : years = "JULY_" & gFinancalyearStart : PDFDATE = "JULY_" & gFinancalyearStart
+            If Mid(Me.CbxMonth.Text, 1, 3) = "Aug" Then month1 = 8 : month = "AUG" : noofdays = 31 : bildt = "01/aug/" & gFinancalyearStart : month2 = "08" : billdt2 = "31/aug/" & gFinancalyearStart : years = "AUGUST_" & gFinancalyearStart : PDFDATE = "AUGUST_" & gFinancalyearStart
+            If Mid(Me.CbxMonth.Text, 1, 3) = "Sep" Then month1 = 9 : month = "SEP" : noofdays = 30 : bildt = "01/sep/" & gFinancalyearStart : month2 = "09" : billdt2 = "30/sep/" & gFinancalyearStart : years = "SEPTEMBER_" & gFinancalyearStart : PDFDATE = "SEPTEMBER_" & gFinancalyearStart
+            If Mid(Me.CbxMonth.Text, 1, 3) = "Oct" Then month1 = 10 : month = "OCT" : noofdays = 31 : bildt = "01/oct/" & gFinancalyearStart : month2 = "10" : billdt2 = "31/oct/" & gFinancalyearStart : years = "OCTOBER_" & gFinancalyearStart : PDFDATE = "OCTOBER_" & gFinancalyearStart
+            If Mid(Me.CbxMonth.Text, 1, 3) = "Nov" Then month1 = 11 : month = "NOV" : noofdays = 30 : bildt = "01/nov/" & gFinancalyearStart : month2 = "11" : billdt2 = "30/nov/" & gFinancalyearStart : years = "NOVEMBER_" & gFinancalyearStart : PDFDATE = "NOVEMBER_" & gFinancalyearStart
+            If Mid(Me.CbxMonth.Text, 1, 3) = "Dec" Then month1 = 12 : month = "DEC" : noofdays = 31 : bildt = "01/dec/" & gFinancalyearStart : month2 = "12" : billdt2 = "31/dec/" & gFinancalyearStart : years = "DECEMBER_" & gFinancalyearStart : PDFDATE = "DECEMBER_" & gFinancalyearStart
+            If Mid(Me.CbxMonth.Text, 1, 3) = "Jan" Then month1 = 1 : month = "JAN" : noofdays = 31 : bildt = "01/jan/" & gFinancialYearEnd : month2 = "01" : billdt2 = "31/jan/" & gFinancialYearEnd : years = "JANUARY_" & gFinancialYearEnd : PDFDATE = "JANUARY_" & gFinancialYearEnd
+            If Mid(Me.CbxMonth.Text, 1, 3) = "Feb" Then month1 = 2 : month = "FEB" : noofdays = 28 : bildt = "01/feb/" & gFinancialYearEnd : month2 = "02" : billdt2 = "28/feb/" & gFinancialYearEnd : years = "FEBRUARY_" & gFinancialYearEnd : PDFDATE = "FEBRUARY_" & gFinancialYearEnd
+
+            If Mid(Me.CbxMonth.Text, 1, 3) = "Mar" Then month1 = 3 : month = "MAR" : noofdays = 31 : bildt = "01/mar/" & gFinancialYearEnd : month2 = "03" : billdt2 = "31/mar/" & gFinancialYearEnd : years = "MARCH_" & gFinancialYearEnd : PDFDATE = "MARCH_" & gFinancialYearEnd
+
+            Dim Viewer As New ReportViwer
+
+            Dim r As New MONTH_BILL2
+
+            sqlstrinG = " SELECT ISNULL(M.MCODE,'') AS MCODE,(ISNULL(M.PREFIX,'')+ '' +ISNULL(M.MNAME,'')) AS MNAME,ISNULL(M.CONTADD1,'') AS CONTADD1,ISNULL(M.CONTADD2,'') AS CONTADD2,ISNULL(M.CONTADD3,'') AS CONTADD3,ISNULL(M.CONTCITY,'') AS CONTCITY,ISNULL(M.CONTPIN,'') AS CONTPIN,ISNULL(M.contcell,'') AS contcell,ISNULL(M.MEMBERTYPECODE,'')AS MEMBERTYPECODE, '" & Format(CbxMonth.Value, "dd/MMM/yyyy") & "' AS ADDDATE, (SUM(O.DEBIT)-SUM(O.CREDIT)) AS CREDITLIMIT FROM OPENINGBAL O,MEMBERMASTER M WHERE M.MCODE = O.SLCODE AND M.MCODE BETWEEN '" & MCODE & "' AND '" & MCODE & "' AND O.BILLDATE < '" & bildt & "' AND  CURENTSTATUS IN('LIVE','ACTIVE') AND ISNULL(FREEZE,'')<>'Y' GROUP BY M.MCODE, M.MNAME,M.PREFIX,M.CONTADD1,M.CONTADD2,M.CONTADD3,M.CONTCITY,M.CONTPIN,m.contcell,MEMBERTYPECODE  ORDER BY M.MCODE "
+
+            sqlstring1 = " select slcode,locdesc,sum(dramount) as dramount,sum(cramount) as cramount "
+            sqlstring1 = sqlstring1 & "FROM View_Rec_Det WHERE LTRIM(RTRIM(SLCODE)) BETWEEN '" & MCODE & "' AND '" & MCODE & "' AND MONTH(BILLDATE) = " & month1 & " GROUP BY SLCODE,locdesc "
+
+            ssql2 = "select SUM(amount)as amount,description,mcode from month_bill where (month(date)=" & month1 & " or date='1900-01-01') AND mCODE BETWEEN '" & MCODE & "' AND '" & MCODE & "' group by description,mcode,order_no order by mcode,order_no"
+
+            sqlstring3 = " select slcode,locdesc,sum(dramount) as dramount,sum(cramount) as cramount "
+            sqlstring3 = sqlstring3 & " FROM View_drcr_Det WHERE SLCODE BETWEEN '" & MCODE & "' AND '" & MCODE & "' AND MONTH(BILLDATE) = " & month1 & " GROUP BY SLCODE,locdesc "
+
+            Call Viewer.GetDetails1(sqlstrinG, "MEMBERMASTER", r)
+            Call Viewer.GetDetails1(ssql2, "month_bill", r)
+            Call Viewer.GetDetails1(sqlstring1, "View_Rec_Det", r)
+            Call Viewer.GetDetails1(sqlstring3, "View_drcr_Det", r)
+            'Call Viewer.GetDetails1(sqlstring2, "accountsSetUp", r)
+            'Dim txtobj1 As TextObject
+            'Dim txtobj As TextObject
+            'Dim txtobj2 As TextObject
+            Dim txtobj15 As TextObject
+            Dim txtobj18 As TextObject
+            Dim txtobj19 As TextObject
+            Dim txtobj20 As TextObject
+            Dim txtobj21 As TextObject
+
+            txtobj21 = r.ReportDefinition.ReportObjects("Text20")
+            txtobj21.Text = Txt_Sign.Text
+
+            txtobj19 = r.ReportDefinition.ReportObjects("Text13")
+            txtobj20 = r.ReportDefinition.ReportObjects("Text8")
+            txtobj15 = r.ReportDefinition.ReportObjects("Text7")
+            txtobj18 = r.ReportDefinition.ReportObjects("Text5")
+
+            'txtobj1 = r.ReportDefinition.ReportObjects("Text29")
+            'txtobj1.Text = UCase(gCompanyname)
+            'txtobj1 = r.ReportDefinition.ReportObjects("Text30")
+            'txtobj1.Text = UCase(gCompanyAddress(1))
+            'txtobj1 = r.ReportDefinition.ReportObjects("Text31")
+            'txtobj1.Text = UCase(gCompanyAddress(2))
+            'txtobj1 = r.ReportDefinition.ReportObjects("Text32")
+            'txtobj1.Text = UCase(gCompanyAddress(3))
+            'txtobj1 = r.ReportDefinition.ReportObjects("Text34")
+            'txtobj1.Text = UCase(txt_msg.Text)
+
+            txtobj19.Text = "CREDIT BILL FOR THE MONTH OF " & month & " " & IIf(month1 > 3, Mid(gFinancialyearStart, 7, 4), Mid(gFinancialYearEnd, 7, 4))
+            txtobj15.Text = "/" & IIf(month1 > 3, Mid(gFinancialyearStart, 7, 4), Mid(gFinancialYearEnd, 7, 4)) & month2
+            txtobj18.Text = noofdays & "-" & IIf(month1 > 9, Str(month1), "0" & month1) & "-" & IIf(month1 > 3, Mid(gFinancialyearStart, 7, 4), Mid(gFinancialYearEnd, 7, 4))
+            txtobj20.Text = noofdays & "-" & IIf(month1 > 9, Str(month1), "0" & month1) & "-" & IIf(month1 > 3, Mid(gFinancialyearStart, 7, 4), Mid(gFinancialYearEnd, 7, 4))
+
+            'txtobj15.Text = UCase(gUsername)
+            '            Viewer.Show()
+
+            Dim FILEPATH As String
+            Dim AFILE As File
+
+            FILEPATH = gPDFPath & "\" & years & "\" & MCODE.Replace("/", "_") & "_" & PDFDATE & "MONTH_BILL.PDF"
+
+            If AFILE.Exists(FILEPATH) Then
+                AFILE.Delete(FILEPATH)
+            End If
+            Dim CREXPORTOPTIONS As CrystalDecisions.Shared.ExportOptions
+            Dim CRDISKFILEDESTINATIONOPTIONS As New CrystalDecisions.Shared.DiskFileDestinationOptions
+            Dim CrFormatTypeOptions As New CrystalDecisions.Shared.PdfRtfWordFormatOptions
+            CRDISKFILEDESTINATIONOPTIONS.DiskFileName = FILEPATH
+            CREXPORTOPTIONS = r.ExportOptions
+            With CREXPORTOPTIONS
+                .ExportDestinationType = CrystalDecisions.Shared.ExportDestinationType.DiskFile
+                .ExportFormatType = CrystalDecisions.Shared.ExportFormatType.PortableDocFormat
+                '.ExportFormatType = ExportFormatType.WordForWindows                   
+                .DestinationOptions = CRDISKFILEDESTINATIONOPTIONS
+                .FormatOptions = CrFormatTypeOptions
+            End With
+
+            'r1.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, FILEPATH)
+            r.Export()
+            r.Close()
+            r.Dispose()
+
+            Viewer.CrystalReportViewer1.Dispose()
+            'Viewer.CryRptViewer.ReportSource = r
+            Viewer.Refresh()
+            Viewer.Close()
+            Viewer.Dispose()
+            gdataset.Dispose()
+            'Dim sTempFileName As String = System.IO.Path.GetTempFileName
+            'System.IO.File.Delete(sTempFileName)
+            GC.Collect()
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+    End Sub
+
     Private Sub RDOCOMBINEDNO_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles RDOCOMBINEDNO.Click
         Rnd_Summary.Visible = True
         Rnd_Details.Visible = True
@@ -3058,5 +3275,106 @@ Public Class MonthBilling
             Txt_msg1.Visible = True
             Label4.Visible = True
         End If
+    End Sub
+
+    Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Try
+            Dim cmdText As String
+            Dim duedate, membertype, TYPE(0), month, sql, sqlstrinG, month2 As String
+            Dim opl, i As Integer
+            Call Validation()
+            sqlstrinG = "select ISNULL(subscode,'') as groupcode from subsposting where ISNULL(subscode,'')<>'' group by subscode having SUM(amount)>0"
+            sqlstrinG = sqlstrinG & " union all"
+            sqlstrinG = sqlstrinG & "select ISNULL(taxcode,'') as groupcode from subsposting where ISNULL(taxcode,'')<>'' group by taxcode having SUM(taxamount)>0"
+            sqlstrinG = sqlstrinG & " union all"
+            sqlstrinG = sqlstrinG & " select ISNULL(taxaccountcode,'') as groupcode from kot_det where ISNULL(taxaccountcode,'')<>'' group by TAXACCOUNTCODE having SUM(taxamount)>0 "
+            sqlstrinG = sqlstrinG & " union all"
+            sqlstrinG = sqlstrinG & " select ISNULL(packaccountcode,'') as groupcode from kot_det where ISNULL(PACKACCOUNTCODE,'')<>'' group by PACKACCOUNTCODE having SUM(packamount)>0 "
+            sqlstrinG = sqlstrinG & " union(all)"
+            sqlstrinG = sqlstrinG & " select ISNULL(GROUPCODE,'') as groupcode from kot_det where ISNULL(GROUPCODE,'')<>'' group by GROUPCODE having SUM(amount)>0 "
+            'sqlstring = "ALTER VIEW opbalhga as select slcode,SUM(opbalance) as openingbalance from MM_VIEW_DEBITCREDIT WHERE BILLDATE< '" & bildt & "'GROUP BY SLCODE"
+            'gconnection.dataOperation(3, sqlstring, "opbalhga1")
+            'sqlstring = "ALTER view credhga as Select B.SLCODE,B.OPENINGBALANCE,SUM(isnull(a.DEBITAMOUNT,0))AS DEBITAMOUNT,SUM(isnull(a.CREDIT,0))AS CREDIT,A.mname,A.CONTCELL  from  opbalhga b left outer join MM_VIEW_DEBITCREDIT_DET a on a.slcode=b.SLcode and MONTH(a.BILLDATE)='" & month1 & "' group by b.SLCODE,b.OPENINGBALANCE,A.MNAME,A.CONTCELL"
+            'gconnection.dataOperation(4, sqlstring, "credhga2")
+            'sqlstring1 = "ALTER view credhga1 as select a.slcode,b.mname,b.CONTCELL,a.openingbalance,a.credit,a.debitamount from credhga a inner join membermaster b on a.slcode=b.MCODE"
+            'gconnection.dataOperation(6, sqlstring1, "credhga4")
+            If Mid(Me.CbxMonth.Text, 1, 5) = "April" Then month1 = 4 : month = "APR" : noofdays = 30 : bildt = "01/apr/" & Mid(gFinancialyearStart, 7, 4) : month2 = "04"
+            If Mid(Me.CbxMonth.Text, 1, 3) = "May" Then month1 = 5 : month = "MAY" : noofdays = 31 : bildt = "01/may/" & Mid(gFinancialyearStart, 7, 4) : month2 = "05"
+            If Mid(Me.CbxMonth.Text, 1, 3) = "Jun" Then month1 = 6 : month = "JUN" : noofdays = 30 : bildt = "01/jun/" & Mid(gFinancialyearStart, 7, 4) : month2 = "06"
+            If Mid(Me.CbxMonth.Text, 1, 4) = "July" Then month1 = 7 : month = "JUL" : noofdays = 31 : bildt = "01/jul/" & Mid(gFinancialyearStart, 7, 4) : month2 = "07"
+            If Mid(Me.CbxMonth.Text, 1, 6) = "August" Then month1 = 8 : month = "AUG" : noofdays = 31 : bildt = "01/aug/" & Mid(gFinancialyearStart, 7, 4) : month2 = "08"
+            If Mid(Me.CbxMonth.Text, 1, 9) = "September" Then month1 = 9 : month = "SEP" : noofdays = 30 : bildt = "01/sep/" & Mid(gFinancialyearStart, 7, 4) : month2 = "09"
+            If Mid(Me.CbxMonth.Text, 1, 7) = "October" Then month1 = 10 : month = "OCT" : noofdays = 31 : bildt = "01/oct/" & Mid(gFinancialyearStart, 7, 4) : month2 = "10"
+            If Mid(Me.CbxMonth.Text, 1, 8) = "November" Then month1 = 11 : month = "NOV" : noofdays = 30 : bildt = "01/nov/" & Mid(gFinancialyearStart, 7, 4) : month2 = "11"
+            If Mid(Me.CbxMonth.Text, 1, 8) = "December" Then month1 = 12 : month = "DEC" : noofdays = 31 : bildt = "01/dec/" & Mid(gFinancialyearStart, 7, 4) : month2 = "12"
+            If Mid(Me.CbxMonth.Text, 1, 7) = "January" Then month1 = 1 : month = "JAN" : noofdays = 31 : bildt = "01/jan/" & Mid(gFinancialYearEnd, 7, 4) : month2 = "01"
+            'If Mid(Me.CbxMonth.Text, 1, 8) = "February" Then month1 = 2 : month = "FEB" : noofdays = 28 : bildt = "01/feb/" & Mid(gFinancialYearEnd, 7, 4) : month2 = "02"
+            If Mid(Me.CbxMonth.Text, 1, 8) = "February" Then
+                MNTH2 = Year(gFinancialYearEnd) Mod 4
+                month1 = 2
+                month = "FEB"
+                If MNTH2 = 0 Then
+                    noofdays = 29
+                    bildt = "01/feb/" & Mid(gFinancialYearEnd, 7, 4)
+                Else
+                    noofdays = 28
+                    bildt = "01/feb/" & Mid(gFinancialYearEnd, 7, 4)
+                End If
+                month2 = "02"
+            End If
+            If Mid(Me.CbxMonth.Text, 1, 5) = "March" Then month1 = 3 : month = "MAR" : noofdays = 31 : bildt = "01/mar/" & Mid(gFinancialYearEnd, 7, 4) : month2 = "03"
+            Dim Viewer As New ReportViwer
+
+            Dim r As New MONTH_BILL1
+
+            If Trim(txt_Tomcode.Text) <> "" And Trim(txt_Tomcode.Text) <> "" Then
+                sqlstrinG = " SELECT ISNULL(M.MCODE,'') AS MCODE,(ISNULL(M.PREFIX,'')+ '' +ISNULL(M.MNAME,'')) AS MNAME,ISNULL(M.CONTADD1,'') AS CONTADD1,ISNULL(M.CONTADD2,'') AS CONTADD2,ISNULL(M.CONTADD3,'') AS CONTADD3,ISNULL(M.CONTCITY,'') AS CONTCITY,ISNULL(M.CONTPIN,'') AS CONTPIN,ISNULL(M.contcell,'') AS contcell,ISNULL(M.MEMBERTYPECODE,'')AS MEMBERTYPECODE, '" & Format(CbxMonth.Value, "dd/MMM/yyyy") & "' AS ADDDATE, (SUM(O.DEBIT)-SUM(O.CREDIT)) AS CREDITLIMIT FROM OPENINGBAL O,MEMBERMASTER M WHERE M.MCODE = O.SLCODE AND M.MCODE BETWEEN '" & txt_mcode.Text & "' AND '" & txt_Tomcode.Text & "' AND O.BILLDATE < '" & bildt & "' AND  CURENTSTATUS IN('LIVE','ACTIVE') AND ISNULL(FREEZE,'')<>'Y' GROUP BY M.MCODE, M.MNAME,M.PREFIX,M.CONTADD1,M.CONTADD2,M.CONTADD3,M.CONTCITY,M.CONTPIN,m.contcell,MEMBERTYPECODE  ORDER BY M.MCODE "
+                sqlstring1 = " select slcode,locdesc,sum(dramount) as dramount,sum(cramount) as cramount "
+                sqlstring1 = sqlstring1 & "FROM View_Rec_Det WHERE LTRIM(RTRIM(SLCODE)) BETWEEN '" & txt_mcode.Text & "' AND '" & txt_Tomcode.Text & "' AND MONTH(BILLDATE) = " & month1 & " GROUP BY SLCODE,locdesc "
+                'ssql2 = " SELECT SLCODE,UPPER(HEADDESC) AS HEADDESC,SUM(DRAMOUNT) AS DRAMOUNT,SUM(CRAMOUNT) AS CRAMOUNT FROM View_Pos_Summary WHERE MONTH(BILLDATE) = " & month1 & " AND SLCODE BETWEEN '" & txt_mcode.Text & "' AND '" & txt_Tomcode.Text & "' GROUP BY SLCODE,HEADDESC "
+                ssql2 = "select SUM(amount)as amount,description,mcode from month_bill where (month(date)=" & month1 & " or date='1900-01-01') AND mCODE BETWEEN '" & txt_mcode.Text & "' AND '" & txt_Tomcode.Text & "' group by description,mcode,order_no order by mcode,order_no"
+                sqlstring3 = " select slcode,locdesc,sum(dramount) as dramount,sum(cramount) as cramount "
+                sqlstring3 = sqlstring3 & " FROM View_drcr_Det WHERE SLCODE BETWEEN '" & txt_mcode.Text & "' AND '" & txt_Tomcode.Text & "' AND MONTH(BILLDATE) = " & month1 & " GROUP BY SLCODE,locdesc "
+                'sqlstring2 = "select ClubLogo from accountsSetUp"
+            Else
+                ' membertype = ""
+                If chk_Filter_Field.CheckedItems.Count > 0 Then
+                    For i = 0 To chk_Filter_Field.CheckedItems.Count - 1
+                        TYPE = Split(chk_Filter_Field.CheckedItems(i), ".")
+                        membertype = membertype & "'" & TYPE(0) & "', "
+                    Next
+                    membertype = Mid(membertype, 1, Len(membertype) - 2)
+
+                Else
+                    MessageBox.Show("Select the Category(s)", MyCompanyName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                    chk_Filter_Field.Focus()
+                    Exit Sub
+                End If
+                sqlstrinG = " SELECT ISNULL(M.MCODE,'') AS MCODE,(ISNULL(M.PREFIX,'')+ '' +ISNULL(M.MNAME,'')) AS MNAME,ISNULL(M.CONTADD1,'') AS CONTADD1,ISNULL(M.CONTADD2,'') AS CONTADD2,ISNULL(M.CONTADD3,'') AS CONTADD3,ISNULL(M.CONTCITY,'') AS CONTCITY,ISNULL(M.CONTPIN,'') AS CONTPIN,ISNULL(M.contcell,'') AS contcell,ISNULL(M.MEMBERTYPECODE,'')AS MEMBERTYPECODE, '" & Format(CbxMonth.Value, "dd/MMM/yyyy") & "' AS ADDDATE, (SUM(O.DEBIT)-SUM(O.CREDIT)) AS CREDITLIMIT FROM OPENINGBAL O,MEMBERMASTER M WHERE M.MCODE = O.SLCODE AND LTRIM(RTRIM(m.membertypecode)) IN(" & membertype & ") AND O.BILLDATE < '" & bildt & "' AND  CURENTSTATUS IN('LIVE','ACTIVE') AND ISNULL(FREEZE,'')<>'Y' GROUP BY M.MCODE, M.MNAME,M.PREFIX,M.CONTADD1,M.CONTADD2,M.CONTADD3,M.CONTCITY,M.CONTPIN,m.contcell,MEMBERTYPECODE  ORDER BY M.MCODE "
+
+                sqlstring1 = " select a.slcode,a.locdesc,sum(a.dramount) as dramount,sum(a.cramount) as cramount "
+                sqlstring1 = sqlstring1 & "FROM View_Rec_Det a ,membermaster b WHERE MONTH(BILLDATE) = " & month1 & "  and a.slcode=b.MCODE and b.membertypecode in(" & membertype & ")  Group by  a.SLCODE,a.locdesc "
+                ssql2 = "select SUM(A.amount)as amount,A.description,A.mcode from month_bill A,MEMBERMASTER B where (month(A.date)=" & month1 & " or A.date='1900-01-01') and b.membertypecode in(" & membertype & ") group by a.description,a.mcode,a.order_no order by a.mcode,a.order_no"
+                sqlstring3 = " select a.slcode,a.locdesc,sum(a.dramount) as dramount,sum(a.cramount) as cramount "
+                sqlstring3 = sqlstring3 & " FROM View_drcr_Det a,membermaster b WHERE a.slcode=b.mcode  AND MONTH(a.BILLDATE) = " & month1 & " and b.membertypecode in(" & membertype & ") GROUP BY a.SLCODE,a.locdesc "
+
+
+            End If
+            vconn.getDataSet(sqlstrinG, "PDFMem")
+            If gdataset.Tables("PDFMem").Rows.Count > 0 Then
+                For i = 0 To gdataset.Tables("PDFMem").Rows.Count - 1
+                    Dim lmcode As String
+                    lmcode = gdataset.Tables("PDFMem").Rows(i).Item("mcode")
+                    Call GETSUMMARY_PRINT_OTHERS_DOWNLOAD(lmcode)
+                Next
+            End If
+
+            MessageBox.Show("Export of Bill Genration Completed", MyCompanyName)
+        Catch ex As Exception
+        End Try
     End Sub
 End Class
